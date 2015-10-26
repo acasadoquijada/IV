@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(name='CCUE',
 	version='0.0.1',
-	description='Aplicación web compartición información universitaria',
+	description='Aplicacion web compartición informacion universitaria',
 	url='https://github.com/acasadoquijada/pollaplication',
 	author='Alejandro Casado Quijada',
 	author_email='acasadoquijada@gmail.com',
