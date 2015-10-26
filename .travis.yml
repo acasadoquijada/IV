@@ -3,9 +3,9 @@ python:
  - "3.4.3"
 # command to install dependencies
 install:
- - python CCEU/setup.py install
- - pip install -r CCEU/requirements.txt
+ - python CCUE/setup.py install
+ - pip install -r CCUE/requirements.txt
 # command to run tests
 script:
- - cd CCEU
+ - cd CCUE
  - python manage.py test
