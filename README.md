@@ -23,6 +23,8 @@ Como era de esperar esta aplicación contrendrá un sistema de moderación, impi
 
 ##Segundo hito
 
+[![Build Status](https://travis-ci.org/acasadoquijada/IV.svg?branch=master)](https://travis-ci.org/acasadoquijada/IV)
+
 ###Tests
 
 He elegido elegido el sistema de test porque es una buena forma de realizar tus proyectos, ya que permite probar cada funcionalidad de la aplicación para comprobar que todo funciona tal y como esperamos.
