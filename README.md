@@ -31,7 +31,7 @@ He elegido elegido el sistema de test porque es una buena forma de realizar tus 
 
 En mi caso django proporciona un fichero denominado `test.py` que está pensado para colocar nuestros test. Para ejecutarlo basta usar `python3 manage.py test datos`
 
-Mi fichero test se puede consultar [aquí](test)
+Mi fichero test se puede consultar [aquí](CCUE/datos/test.py)
 
 Este fichero ira cambiando según se añadan nuevas funcionalidades a la aplicación
 
@@ -39,7 +39,7 @@ Este fichero ira cambiando según se añadan nuevas funcionalidades a la aplicac
 
 Para la integración contínua he elegido [travis](https://travis-ci.org/) debido a su facilidad de uso y su correcto funcionamiento.
 
-Necesitamos crear un fichero llamado `[setup.py]`(setup)
+Necesitamos crear un fichero llamado [setup.py](CCUE/setup.py)
 
 Tambien necesitamos crear un fichero `.travis.yml` que lo situaremos en el directorio raíz de la aplicación.
 
@@ -59,6 +59,11 @@ script:
  - python manage.py test
 ~~~
 
+Ahora cada vez que realicemos un `commit` se ejecutarán automáticamente los test que tengamos definidos para comprobar que todo funciona correctamente.
+
+Si todo va bien debería salir una salida similar a esta:
+
+![practica2](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica%202/practica2_zpszqmff4qp.png)
 
 
 
