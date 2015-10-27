@@ -63,7 +63,7 @@ Ahora cada vez que realicemos un `push` se ejecutarán automáticamente los test
 
 Si todo va bien debería salir una salida similar a esta:
 
-![practica2](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica%202/practica2_zpszqmff4qp.png)
+![practica2](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/practica2_zps7yrt4cjk.png)
 
 
 
