@@ -1,6 +1,6 @@
-#CCUE
+#PPE
 
-##Compartición de conocimiento de universidades españolas
+##Pequeños pueblos españoles
 
 ##Primer hito
 
@@ -10,15 +10,15 @@ El proyecto de la asignatura se va a llevar a cabo junto al de la asginatura de 
  
 He elegido realizar ambos proyectos conjuntamente ya que en DAI realizaremos una aplicación web y el objetivo del proyecto de IV es proporcionar soporte, mediante una infraestructura virtual a dicha aplicación
 
-El proyecto consiste en una aplicación web, creada usando django, en la que se pueden dar de alta usuarios, universidades, grados y asignaturas.
+El proyecto consiste en una aplicación web, creada usando django, para hablar sobre pueblos de nuestro país.
 
-Cada grado va ligado a una universidad y cada asignatura a un grado.
+Los pueblos se agrupan en provincias, y estas a su vez en comunidades autónomas.
 
-Será posible compartir apuntes, subiendolos a la aplicación, cada asignatura tendrá su propio foro para posibles debates.
+Podremos hablar sobre restaurantes, monumentos, personajes históricos, sitios de interes... dando nuestra opinión y una valoración. Se incluirá un foro para tratar temas con mayor interés.
 
-Se está estudiando la posibilidad de agregar profesores a las asignaturas para que los allumnos comententen sobre ellos.
+Dispondra de una serie de rankings elaborados a partir de las valoraciones de los usuarios.
 
-Como era de esperar esta aplicación contrendrá un sistema de moderación, impidiendo que se utilicen palabras inapropiadas en los comentarios.
+El objetivo es dar a conocer pueblos pequeños de nuestra región
 
 
 ##Segundo hito
