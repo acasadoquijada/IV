@@ -59,7 +59,7 @@ script:
  - python manage.py test
 ~~~
 
-Ahora cada vez que realicemos un `commit` se ejecutarán automáticamente los test que tengamos definidos para comprobar que todo funciona correctamente.
+Ahora cada vez que realicemos un `push` se ejecutarán automáticamente los test que tengamos definidos para comprobar que todo funciona correctamente.
 
 Si todo va bien debería salir una salida similar a esta:
 
