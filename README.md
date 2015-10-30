@@ -41,6 +41,10 @@ Para la integración contínua he elegido [travis](https://travis-ci.org/) debid
 
 Necesitamos crear un fichero llamado [setup.py](PPE/setup.py)
 
+Para facilitar la instalación y prueba de test de la aplicación he creado un fichero [Makefile](PPE/Makefile)
+
+Para ejecutar la aplicación usando el fichero Makefile basta usar `make run` para los test `make test` y para la instalación `make install`
+
 Tambien necesitamos crear un fichero `.travis.yml` que lo situaremos en el directorio raíz de la aplicación.
 
 Este es mi fichero `.travis.yml`
@@ -49,14 +53,17 @@ Este es mi fichero `.travis.yml`
 language: python
 python:
  - "3.4.3"
-# command to install dependencies
+# Antes de instalar nos posicionamos en el directorio
+before_install:
+- cd PPE
+
+# Para instalar usamos el fichero Makefile
 install:
- - python PPE/setup.py install
- - pip install -r PPE/requirements.txt
-# command to run tests
+ - make install
+
+# Tambien usamos Makefile para los test
 script:
- - cd PPE
- - python manage.py test
+ - make test
 ~~~
 
 Ahora cada vez que realicemos un `push` se ejecutarán automáticamente los test que tengamos definidos para comprobar que todo funciona correctamente.
