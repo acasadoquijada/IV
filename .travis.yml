@@ -1,11 +1,14 @@
 language: python
 python:
  - "3.4.3"
-# command to install dependencies
+# Antes de instalar nos posicionamos en el directorio
+before_install:
+- cd PPE
+
+# Para instalar usamos el fichero Makefile
 install:
- - python PPE/setup.py install
- - pip install -r PPE/requirements.txt
-# command to run tests
+ - make install
+
+# Tambien usamos Makefile para los test
 script:
- - cd PPE
- - python manage.py test
+ - make test
