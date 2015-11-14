@@ -2,7 +2,8 @@
 
 ##Pequeños pueblos españoles
 
-##Primer hito
+[![Build Status](https://travis-ci.org/acasadoquijada/IV.svg?branch=master)](https://travis-ci.org/acasadoquijada/IV)
+
 
 ###Introducción
 
@@ -19,11 +20,6 @@ Podremos hablar sobre restaurantes, monumentos, personajes históricos, sitios d
 Dispondra de una serie de rankings elaborados a partir de las valoraciones de los usuarios.
 
 El objetivo es dar a conocer pueblos pequeños de nuestra región
-
-
-##Segundo hito
-
-[![Build Status](https://travis-ci.org/acasadoquijada/IV.svg?branch=master)](https://travis-ci.org/acasadoquijada/IV)
 
 ###Tests
 
@@ -73,7 +69,31 @@ Si todo va bien debería salir una salida similar a esta:
 ![practica2](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/practica2_zps7yrt4cjk.png)
 
 
+###Desplegando la aplicación en un PaaS
 
+El PaaS elegido es [Heroku](https://id.heroku.com/), ha sido elegido por su facilidad de uso y funcionalidad.
 
+Hay que modificar la aplicación añadiendo una serie de ficheros:
 
+Empezaremos creando `Procfile` este se debe guardar en la raiz de la practica. En mi caso mi fichero `Procfile` contiene:
+
+`web: gunicorn PPE.wsgi --log-file -`
+
+Un archivo llamado `requirements.py`, aunque esta creado desde el segundo hito hay que añadir contenido, por lo que quedaría asi:
+
+~~~
+Django==1.8.6
+django-toolbelt==0.0.1
+djangorestframework==3.3.1
+dj-database-url==0.3.0
+dj-static==0.0.6
+gunicorn==19.3.0
+static3==0.6.1
+wheel==0.24.0
+whitenoise==2.0.4
+psycopg2==2.6.1
+Pygments==2.0.2
+~~~
+
+Una vez realizado esto, vamos a subir la aplicación a Heroku
 
