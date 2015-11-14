@@ -1,9 +1,6 @@
 language: python
 python:
  - "3.4.3"
-# Antes de instalar nos posicionamos en el directorio
-before_install:
-- cd PPE
 
 # Para instalar usamos el fichero Makefile
 install:
