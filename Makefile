@@ -12,7 +12,6 @@ run:
 	python3 manage.py runserver
 
 deploy:
-	wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh   # descargar herramienta heroku CLI
 	heroku login
 	heroku create
 	git add .
