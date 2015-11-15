@@ -96,6 +96,11 @@ psycopg2==2.6.1
 Pygments==2.0.2
 ~~~
 
+En mi caso uso python 3.4.3, por lo que tengo que indicarselo a Heroku, para ello creamos un archivo `runtime.txt` con:
+~~~
+python-3.4.3
+~~~
+
 Una vez realizado esto, vamos a subir la aplicación a Heroku, para ello hay que realizar:
 
 * heroku login
@@ -106,10 +111,25 @@ Una vez realizado esto, vamos a subir la aplicación a Heroku, para ello hay que
 
 Con estos pasos tendremos nuestra aplicación subida a Heroku
 
-![practica1]()
+![practica1](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/practica1_zpsiyahfadk.png)
 
 
-Ahora podremos acceder a ella a través de la [url]( proporcionada por Heroku
+Ahora podremos acceder a ella a través de la [url](http://pequeniospueblosespanioles.herokuapp.com/) proporcionada por Heroku
 
 
+###Snap CI
+
+Para usar Snap CI hay que registrarse primero, cosa que se puede hacer con la cuenta de github.
+
+Una vez dentro debemos seleccionar el repositorio de la aplicacion deseada pulsando en +Repository.
+
+![practica2](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/practica3_zpsj9ls4qwd.png)
+
+Ahora tenemos que editar el pipeline añadiendo un nuevo stage indicando nuestra aplicación en heroku
+
+![practica3](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/pracitca4_zpscqwz3u3n.png)
+
+Tras esto, cada vez que hagamos un push a nuestro repositorio, Snap comprobará la aplicación automáticamente
+
+![practica4](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/practica5_zpsgkktabyi.png)
 
