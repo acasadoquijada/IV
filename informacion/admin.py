@@ -14,4 +14,3 @@ class AdminPueblo(admin.ModelAdmin):
 admin.site.register(ComunidadAutonoma,AdminCA)
 admin.site.register(Provincia,AdminProvincia)
 admin.site.register(Pueblo,AdminPueblo)
-

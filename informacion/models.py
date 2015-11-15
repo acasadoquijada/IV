@@ -1,5 +1,9 @@
 from django.db import models
 
+# Create your models here.
+
+from django.db import models
+
 class ComunidadAutonoma(models.Model):
 	nombre = models.CharField(max_length=30)
 	fecha_de_alta = models.DateTimeField('date published')
