@@ -117,6 +117,11 @@ Con estos pasos tendremos nuestra aplicación subida a Heroku
 Ahora podremos acceder a ella a través de la [url](http://pequeniospueblosespanioles.herokuapp.com/) proporcionada por Heroku
 
 
+Para que los cambios en la aplicación se desplieguen al hacer `git push` debemos hacer lo siguiente:
+
+![heroku](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/heroku_zpswmdusblb.png)
+
+
 ###Snap CI
 
 Para usar Snap CI hay que registrarse primero, cosa que se puede hacer con la cuenta de github.
