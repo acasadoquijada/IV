@@ -4,7 +4,7 @@
 
 [![Build Status](https://travis-ci.org/acasadoquijada/IV.svg?branch=master)](https://travis-ci.org/acasadoquijada/IV)
 [![Build Status](https://snap-ci.com/acasadoquijada/IV/branch/master/build_image)](https://snap-ci.com/acasadoquijada/IV/branch/master)
-
+[![Heroku](https://www.herokucdn.com/deploy/button.png)](http://pequeniospueblosespanioles.herokuapp.com/)
 
 ###Introducción
 
@@ -96,5 +96,20 @@ psycopg2==2.6.1
 Pygments==2.0.2
 ~~~
 
-Una vez realizado esto, vamos a subir la aplicación a Heroku
+Una vez realizado esto, vamos a subir la aplicación a Heroku, para ello hay que realizar:
+
+* heroku login
+
+* heroku create
+
+* git push heroku master
+
+Con estos pasos tendremos nuestra aplicación subida a Heroku
+
+![practica1]()
+
+
+Ahora podremos acceder a ella a través de la [url]( proporcionada por Heroku
+
+
 
