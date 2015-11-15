@@ -132,7 +132,7 @@ pip install -r requirements.txt
 make test
 ~~~
 
-![testsnap]()
+![testsnap](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/testsnap_zpsnkrfsbtb.png)
 
 
 Ahora tenemos que editar el pipeline añadiendo un nuevo stage indicando nuestra aplicación en heroku
