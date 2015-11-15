@@ -85,7 +85,6 @@ Un archivo llamado `requirements.py`, aunque esta creado desde el segundo hito h
 ~~~
 Django==1.8.6
 django-toolbelt==0.0.1
-djangorestframework==3.3.1
 dj-database-url==0.3.0
 dj-static==0.0.6
 gunicorn==19.3.0
