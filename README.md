@@ -85,6 +85,7 @@ Un archivo llamado `requirements.py`, aunque esta creado desde el segundo hito h
 ~~~
 Django==1.8.6
 django-toolbelt==0.0.1
+djangorestframework==3.3.1
 dj-database-url==0.3.0
 dj-static==0.0.6
 gunicorn==19.3.0
@@ -123,6 +124,16 @@ Para usar Snap CI hay que registrarse primero, cosa que se puede hacer con la cu
 Una vez dentro debemos seleccionar el repositorio de la aplicacion deseada pulsando en +Repository.
 
 ![practica2](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/practica3_zpsj9ls4qwd.png)
+
+Para que Snap realice los test hay que indicarselo en un stage, para ello escribimos los comandos necesarios
+
+~~~
+pip install -r requirements.txt
+make test
+~~~
+
+![testsnap]()
+
 
 Ahora tenemos que editar el pipeline añadiendo un nuevo stage indicando nuestra aplicación en heroku
 

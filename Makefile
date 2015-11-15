@@ -11,9 +11,3 @@ test: clean
 run:
 	python3 manage.py runserver
 
-deploy:
-	heroku login
-	heroku create
-	git add .
-	git commit -m "Despliege"
-	git push heroku master

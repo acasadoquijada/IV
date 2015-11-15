@@ -6,7 +6,7 @@
 </head>
 <body>
 	<h1>¡Bienvenidos a PPE!</h1>
-	<a href="{% url 'informacion:lista_pueblo' %}">Listado de pueblos</a>
+	<a href="{% url 'informacion:lista_pueblos' %}">Listado de pueblos</a>
     <div id="content">{% block content %}{% endblock %}</div>
         {% block footer %}
 			<a href="https://github.com/acasadoquijada/IV">Visítanos en GitHub</a>.
