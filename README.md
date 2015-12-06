@@ -23,6 +23,7 @@ Dispondra de una serie de rankings elaborados a partir de las valoraciones de lo
 
 El objetivo es dar a conocer pueblos pequeños de nuestra región
 
+
 ###Tests
 
 He elegido elegido el sistema de test porque es una buena forma de realizar tus proyectos, ya que permite probar cada funcionalidad de la aplicación para comprobar que todo funciona tal y como esperamos.
@@ -42,7 +43,6 @@ He elegido dos sistemas de integración continua, [travis](https://travis-ci.org
 Se puede consultar el proceso de configuracion de ambos sistemas [aqui](documentacion/integracion-continua.md)
 
 
-
 ###Desplegando la aplicación en un PaaS
 
 El PaaS elegido es [Heroku](https://id.heroku.com/), ha sido elegido por su facilidad de uso y funcionalidad.
@@ -52,35 +52,6 @@ El enlace de mi aplicacion en heroku es el [siguiente](http://pequeniospuebloses
 Se puede consultar el proceso de despliegue [aqui](documentacion/despliegue-heroku.md)
 
 
-
-
-
-
-####Configuracion postgresql
-
-Para utilizar la base de datos `postgresql` que nos proporciona heroku tenemos que realizar lo siguiente:
-
-* Editar los archivos `wsgi.py` y `setting.py` añadiendo:
-
-~~~
-from dj_static import Cling
-application = Cling(get_wsgi_application())
-
-~~~
-
-~~~
-
-import dj_database_url
-
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
-ON_HEROKU = os.environ.get('PORT')
-if ON_HEROKU:
-    DATABASE_URL=' postgres://dyrolofjqyvqcl:FWOtWebQ7WTaGIfkoPXqQvs3NM@ec2-107-21-223-110.compute-1.amazonaws.com:5432/d2s7fpae9snpfo'
-    DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
-~~~
-
-Una vez hecha la configuración, tenemos que sincronizar las bases de datos, para ello basta ejecutar `heroku run python manage.py syncdb`
 
 
 
