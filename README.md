@@ -70,7 +70,6 @@ El enlace a mi imagen es [este](https://hub.docker.com/r/acasadoquijada/ppe/)
 
 Se puede consultar el proceso de creación de la imagen [aqui](documentacion/docker.md)
 
-
-
+Tambien se ha creado un [script](scripts/docker.sh) que descarga la imagen de la aplicación y la lanza, no olvidar hacer `cd IV && make run` para lanzar la aplicación
 
 
