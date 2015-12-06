@@ -12,8 +12,11 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+import dj_database_url
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 # Quick-start development settings - unsuitable for production
@@ -82,6 +85,10 @@ DATABASES = {
     }
 }
 
+ON_HEROKU = os.environ.get('PORT')
+if ON_HEROKU:
+    DATABASE_URL=' postgres://dyrolofjqyvqcl:FWOtWebQ7WTaGIfkoPXqQvs3NM@ec2-107-21-223-110.compute-1.amazonaws.com:5432/d2s7fpae9snpfo'
+    DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
