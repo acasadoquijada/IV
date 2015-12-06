@@ -34,68 +34,13 @@ Mi fichero test se puede consultar [aquí](PPE/datos/tests.py)
 Este fichero ira cambiando según se añadan nuevas funcionalidades a la aplicación
 
 ###Integración continua
+  
+Para un correcto desarrollo de la aplicación tenemos que usar sistemas de integración continua. Estos se encargan de ejecutar una serie de tests establecidos previamente para comprobar que la aplicación responde de forma correcta, esta comprobacion se realiza cada vez que el respositorio sufra algun cambio.
 
-####Travis
-Para la integración contínua he elegido [travis](https://travis-ci.org/) debido a su facilidad de uso y su correcto funcionamiento.
+He elegido dos sistemas de integración continua, [travis](https://travis-ci.org/) y [snap-ci](https://snap-ci.com/)
 
-Necesitamos crear un fichero llamado [setup.py](PPE/setup.py)
+Se puede consultar el proceso de configuracion de ambos sistemas [aqui](documentacion/integracion-continua.md)
 
-Para facilitar la instalación y prueba de test de la aplicación he creado un fichero [Makefile](PPE/Makefile)
-
-Para ejecutar la aplicación usando el fichero Makefile basta usar `make run` para los test `make test` y para la instalación `make install`
-
-Tambien necesitamos crear un fichero `.travis.yml` que lo situaremos en el directorio raíz de la aplicación.
-
-Este es mi fichero `.travis.yml`
-
-~~~
-language: python
-python:
- - "3.4.3"
-# Antes de instalar nos posicionamos en el directorio
-before_install:
-- cd PPE
-
-# Para instalar usamos el fichero Makefile
-install:
- - make install
-
-# Tambien usamos Makefile para los test
-script:
- - make test
-~~~
-
-Ahora cada vez que realicemos un `push` se ejecutarán automáticamente los test que tengamos definidos para comprobar que todo funciona correctamente.
-
-Si todo va bien debería salir una salida similar a esta:
-
-![practica2](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/practica2_zps7yrt4cjk.png)
-
-####Snap CI
-
-Para usar Snap CI hay que registrarse primero, cosa que se puede hacer con la cuenta de github.
-
-Una vez dentro debemos seleccionar el repositorio de la aplicacion deseada pulsando en +Repository.
-
-![practica2](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/practica3_zpsj9ls4qwd.png)
-
-Para que Snap realice los test hay que indicarselo en un stage, para ello escribimos los comandos necesarios
-
-~~~
-pip install -r requirements.txt
-make test
-~~~
-
-![testsnap](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/testsnap_zpsnkrfsbtb.png)
-
-
-Ahora tenemos que editar el pipeline añadiendo un nuevo stage indicando nuestra aplicación en heroku
-
-![practica3](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/pracitca4_zpscqwz3u3n.png)
-
-Tras esto, cada vez que hagamos un push a nuestro repositorio, Snap comprobará la aplicación automáticamente
-
-![practica4](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/practica5_zpsgkktabyi.png)
 
 
 ###Desplegando la aplicación en un PaaS
