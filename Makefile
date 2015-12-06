@@ -3,7 +3,7 @@ clean:
 	- find . -name '*.pyc' -exec rm {} \;
 
 install: clean
-	sudo pip install -r requirements.txt
+	sudo pip3 install -r requirements.txt
 	
 test: clean
 	python3 manage.py test
