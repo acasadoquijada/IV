@@ -15,13 +15,10 @@ Tambien hay que indicarle como instalar la aplicación y ejecutar los test
 ~~~
 
 install:
- - pip3 install -r requirements.txt
+ - make install
 
 script:
- - python3 manage.py test 
-
-
-Este es mi fichero `.travis.yml`
+ - make test 
 
 ~~~
 

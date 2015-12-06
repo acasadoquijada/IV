@@ -27,7 +27,7 @@ Con estos pasos tendremos nuestra aplicación subida a Heroku
 
 Llegados a este punto debemos tener algun sistema de integración continua configurado para que cada vez que actualicemos el repositorio de la aplicacion se realice el despliegue automatico, para tal fin he usado [snap-ci](integracion-continua.md)
 
-Una vez que lo tengamos definido, hay que indicarle a heroku que espere a que snap-ci le de el visto bueno para desplegar la aplicación
+Una vez que lo tengamos definido, hay que indicarle a heroku que espere a que snap-ci le de el visto bueno para desplegar la aplicación. Tambien le indicamos que se conecte con el repositorio de nuestra aplicación para garantizarnos que al realizar un cambio en él, se realice el despliegue
 
 ![heroku](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/heroku_zpswmdusblb.png)
 
