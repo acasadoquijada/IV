@@ -35,6 +35,7 @@ Este fichero ira cambiando según se añadan nuevas funcionalidades a la aplicac
 
 ###Integración continua
 
+####Travis
 Para la integración contínua he elegido [travis](https://travis-ci.org/) debido a su facilidad de uso y su correcto funcionamiento.
 
 Necesitamos crear un fichero llamado [setup.py](PPE/setup.py)
@@ -69,6 +70,32 @@ Ahora cada vez que realicemos un `push` se ejecutarán automáticamente los test
 Si todo va bien debería salir una salida similar a esta:
 
 ![practica2](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/practica2_zps7yrt4cjk.png)
+
+####Snap CI
+
+Para usar Snap CI hay que registrarse primero, cosa que se puede hacer con la cuenta de github.
+
+Una vez dentro debemos seleccionar el repositorio de la aplicacion deseada pulsando en +Repository.
+
+![practica2](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/practica3_zpsj9ls4qwd.png)
+
+Para que Snap realice los test hay que indicarselo en un stage, para ello escribimos los comandos necesarios
+
+~~~
+pip install -r requirements.txt
+make test
+~~~
+
+![testsnap](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/testsnap_zpsnkrfsbtb.png)
+
+
+Ahora tenemos que editar el pipeline añadiendo un nuevo stage indicando nuestra aplicación en heroku
+
+![practica3](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/pracitca4_zpscqwz3u3n.png)
+
+Tras esto, cada vez que hagamos un push a nuestro repositorio, Snap comprobará la aplicación automáticamente
+
+![practica4](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/practica5_zpsgkktabyi.png)
 
 
 ###Desplegando la aplicación en un PaaS
@@ -123,29 +150,43 @@ Para que los cambios en la aplicación se desplieguen al hacer `git push` debemo
 ![heroku](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/heroku_zpswmdusblb.png)
 
 
-###Snap CI
+####Configuracion postgresql
 
-Para usar Snap CI hay que registrarse primero, cosa que se puede hacer con la cuenta de github.
+Para utilizar la base de datos `postgresql` que nos proporciona heroku tenemos que realizar lo siguiente:
 
-Una vez dentro debemos seleccionar el repositorio de la aplicacion deseada pulsando en +Repository.
-
-![practica2](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/practica3_zpsj9ls4qwd.png)
-
-Para que Snap realice los test hay que indicarselo en un stage, para ello escribimos los comandos necesarios
+* Editar los archivos `wsgi.py` y `setting.py` añadiendo:
 
 ~~~
-pip install -r requirements.txt
-make test
+from dj_static import Cling
+application = Cling(get_wsgi_application())
+
 ~~~
 
-![testsnap](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/testsnap_zpsnkrfsbtb.png)
+~~~
+
+import dj_database_url
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+ON_HEROKU = os.environ.get('PORT')
+if ON_HEROKU:
+    DATABASE_URL=' postgres://dyrolofjqyvqcl:FWOtWebQ7WTaGIfkoPXqQvs3NM@ec2-107-21-223-110.compute-1.amazonaws.com:5432/d2s7fpae9snpfo'
+    DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
+~~~
+
+Una vez hecha la configuración, tenemos que sincronizar las bases de datos, para ello basta ejecutar `heroku run python manage.py syncdb`
 
 
-Ahora tenemos que editar el pipeline añadiendo un nuevo stage indicando nuestra aplicación en heroku
 
-![practica3](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/pracitca4_zpscqwz3u3n.png)
 
-Tras esto, cada vez que hagamos un push a nuestro repositorio, Snap comprobará la aplicación automáticamente
 
-![practica4](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/practica5_zpsgkktabyi.png)
+
+
+
+
+
+
+
+
+
 
