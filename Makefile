@@ -3,11 +3,6 @@ clean:
 	- find . -name '*.pyc' -exec rm {} \;
 
 install: clean
-	sudo apt-get update 
-	sudo apt-get install -y libmysqlclient-dev
-	sudo apt-get install -y python-dev
-	sudo apt-get install -y python-pip
-	sudo pip install --upgrade pip
 	sudo pip install -r requirements.txt
 	
 test: clean
