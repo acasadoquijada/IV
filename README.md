@@ -73,3 +73,8 @@ Se puede consultar el proceso de creación de la imagen [aqui](documentacion/doc
 Tambien se ha creado un [script](scripts/docker.sh) que descarga la imagen de la aplicación y la lanza, no olvidar hacer `cd IV && make run` para lanzar la aplicación
 
 
+###Fichero de cambios
+
+Se ha añadido un [fichero](cambios.md) donde se comentan los cambios mas relevantes entre los diferentes hitos para facilitar la correción de la práctica.
+
+
