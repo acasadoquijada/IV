@@ -1,11 +1,10 @@
 language: python
+
 python:
  - "3.4.3"
 
-# Para instalar usamos el fichero Makefile
 install:
- - make install
+ - pip3 install -r requirements.txt
 
-# Tambien usamos Makefile para los test
 script:
- - make test
+ - python3 manage.py test 
