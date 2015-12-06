@@ -8,7 +8,9 @@ install: clean
 	sudo apt-get install -y python-dev
 	sudo apt-get install -y python-pip
 	sudo pip install --upgrade pip
-    pip install -r requirements.txt
+	sudo apt-get install -y python-pip
+	pip install -r requirements.txt
+
 	
 test: clean
 	python3 manage.py test
