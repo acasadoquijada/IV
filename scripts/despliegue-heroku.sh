@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git clone git@github.com:acasadoquijada/IV.git
+git clone https://github.com/acasadoquijada/IV.git
 
 cd IV
 
