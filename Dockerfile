@@ -10,7 +10,7 @@ RUN sudo git clone https://github.com/acasadoquijada/IV.git
 
 
 RUN sudo apt-get install -y python3-setuptools
-RUN sudo apt-get -y install python-dev
+RUN sudo apt-get -y install python3-dev
 RUN sudo apt-get -y install build-essential
 RUN sudo apt-get -y install python-psycopg2
 RUN sudo apt-get -y install libpq-dev
