@@ -14,4 +14,6 @@ git commit -m "Despliegue"
 
 git push heroku master
 
+heroku run python manage.py syncdb --noinput
+
 heroku ps:scale web=1
