@@ -50,11 +50,11 @@ python3 manage.py test
 ![testsnap](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/testsnap_zpsnkrfsbtb.png)
 
 
-Ahora tenemos que editar el pipeline añadiendo un nuevo stage indicando nuestra aplicación en heroku
+Debemos configurar un nuevo pipeline para que snap compruebe que el despliegue en Heroku de nuestra aplicacion se realiza de forma correcta
 
 ![practica3](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/pracitca4_zpscqwz3u3n.png)
 
-Tras esto, cada vez que hagamos un push a nuestro repositorio, Snap comprobará la aplicación automáticamente
+Tras esto, cada vez que hagamos un push a nuestro repositorio, Snap comprobará todo lo comentado arriba automáticamente
 
 ![practica4](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/practica5_zpsgkktabyi.png)
 

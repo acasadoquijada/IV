@@ -47,6 +47,12 @@ Se puede consultar el proceso de configuracion de ambos sistemas [aqui](document
 
 El PaaS elegido es [Heroku](https://id.heroku.com/), ha sido elegido por su facilidad de uso y funcionalidad.
 
+El enlace de mi aplicacion en heroku es el [siguiente](http://pequeniospueblosespanioles.herokuapp.com/)
+
+Se puede consultar el proceso de despliegue [aqui](documentacion/despliegue-heroku.md)
+
+
+
 Hay que modificar la aplicación añadiendo una serie de ficheros:
 
 Empezaremos creando `Procfile` este se debe guardar en la raiz de la practica. En mi caso mi fichero `Procfile` contiene:
