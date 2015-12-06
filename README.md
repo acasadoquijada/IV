@@ -34,6 +34,14 @@ Mi fichero test se puede consultar [aquí](PPE/datos/tests.py)
 
 Este fichero ira cambiando según se añadan nuevas funcionalidades a la aplicación
 
+###Herramienta de construcción
+
+Como herramienta de construcción he creado un fichero Makefile, este fichero facilita el uso de la aplicación a personas sin conocimientos de django y representa una capa de abstración respecto a los ficheros de instalación, ejecución y de test del proyecto.
+
+Consta de cuatro comandos, `install`, `test` `run` y `clean`
+
+Para usar el fichero basta con ejecutar `make` seguido de cualquiera de las opciones anteriores
+
 ###Integración continua
   
 Para un correcto desarrollo de la aplicación tenemos que usar sistemas de integración continua. Estos se encargan de ejecutar una serie de tests establecidos previamente para comprobar que la aplicación responde de forma correcta, esta comprobacion se realiza cada vez que el respositorio sufra algun cambio.
@@ -43,24 +51,13 @@ He elegido dos sistemas de integración continua, [travis](https://travis-ci.org
 Se puede consultar el proceso de configuracion de ambos sistemas [aqui](documentacion/integracion-continua.md)
 
 
-###Desplegando la aplicación en un PaaS
+###Despliegue en un PaaS
 
 El PaaS elegido es [Heroku](https://id.heroku.com/), ha sido elegido por su facilidad de uso y funcionalidad.
 
 El enlace de mi aplicacion en heroku es el [siguiente](http://pequeniospueblosespanioles.herokuapp.com/)
 
 Se puede consultar el proceso de despliegue [aqui](documentacion/despliegue-heroku.md)
-
-
-
-
-
-
-
-
-
-
-
 
 
 
