@@ -50,8 +50,6 @@ He elegido dos sistemas de integración continua, [travis](https://travis-ci.org
 
 Se puede consultar el proceso de configuracion de ambos sistemas [aqui](documentacion/integracion-continua.md)
 
-Tambien se ha creado un [script](scripts/despliegue-heroku.sh) que permite descargar la aplicacion desde el repositorio y desplegarla en heroku simplemente ejecutándolo
-
 
 ###Despliegue en un PaaS
 
@@ -61,6 +59,14 @@ El enlace de mi aplicacion en heroku es el [siguiente](http://pequeniospuebloses
 
 Se puede consultar el proceso de despliegue [aqui](documentacion/despliegue-heroku.md)
 
+Tambien se ha creado un [script](scripts/despliegue-heroku.sh) que permite descargar la aplicacion desde el repositorio y desplegarla en heroku simplemente ejecutándolo
+
+
+####Entorno de pruebas
+
+Como entorno de pruebas he elegido [docker](https://www.docker.com/) debido a que nos permite el despliegue de aplicaciones en contenedores aislados de la máquina anfitriona.
+
+Se puede consultar el proceso de creación de la imagen [aqui](documentacion/docker.md)
 
 
 
