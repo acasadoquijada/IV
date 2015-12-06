@@ -66,6 +66,8 @@ Tambien se ha creado un [script](scripts/despliegue-heroku.sh) que permite desca
 
 Como entorno de pruebas he elegido [docker](https://www.docker.com/) debido a que nos permite el despliegue de aplicaciones en contenedores aislados de la máquina anfitriona.
 
+El enlace a mi imagen es [este](https://hub.docker.com/r/acasadoquijada/ppe/)
+
 Se puede consultar el proceso de creación de la imagen [aqui](documentacion/docker.md)
 
 

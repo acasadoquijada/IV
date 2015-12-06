@@ -6,7 +6,7 @@ Una vez creado ahora debemos resgistrarnos en [docker hub](https://hub.docker.co
 
 Si hemos configurado correctamente el `dockerfile` nos debe aparecer una pantalla similar
 
-![practica4-1]()
+![practica4-1](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica%204/practica4-1_zpszewwu9b0.png)
 
 Para descargar la imagen tenemos que ejecutar
 
@@ -18,7 +18,7 @@ Una vez descargada la arrancamos
 
 Nos posicionamos dentro del directorio con `cd IV` y ejecutamos la aplicación con `make run`
 
-![practica4-2]()
+![practica4-2](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica%204/practica4-2_zpsa8yh0krj.png)
 
 
 
