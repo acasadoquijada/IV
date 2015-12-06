@@ -75,6 +75,6 @@ Tambien se ha creado un [script](scripts/docker.sh) que descarga la imagen de la
 
 ###Fichero de cambios
 
-Se ha añadido un [fichero](cambios.md) donde se comentan los cambios mas relevantes entre los diferentes hitos para facilitar la correción de la práctica.
+Se ha añadido un [fichero](documentacion/cambios.md) donde se comentan los cambios mas relevantes entre los diferentes hitos para facilitar la correción de la práctica.
 
 
