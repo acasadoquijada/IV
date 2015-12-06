@@ -8,8 +8,6 @@ install: clean
 	sudo apt-get install -y python-dev
 	sudo apt-get install -y python-pip
 	sudo pip install --upgrade pip
-	sudo apt-get install python3-setuptools
-	sudo easy_install3 pip
 	
 test: clean
 	python3 manage.py test
