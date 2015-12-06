@@ -15,5 +15,5 @@ RUN sudo pip install --upgrade pip
 RUN ls
 RUN cd IV/ && ls -l
 RUN cd IV/ && cat requirements.txt
-RUN cd IV/ && sudo pip install -r requirements.txt
+RUN cd IV/ && sudo pip3 install -r requirements.txt
 RUN cd IV/ && python3 manage.py syncdb --noinput
