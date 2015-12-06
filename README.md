@@ -50,6 +50,8 @@ He elegido dos sistemas de integración continua, [travis](https://travis-ci.org
 
 Se puede consultar el proceso de configuracion de ambos sistemas [aqui](documentacion/integracion-continua.md)
 
+Tambien se ha creado un [script](scripts/despliegue-heroku.sh) que permite descargar la aplicacion desde el repositorio y desplegarla en heroku simplemente ejecutándolo
+
 
 ###Despliegue en un PaaS
 
