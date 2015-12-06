@@ -53,52 +53,7 @@ Se puede consultar el proceso de despliegue [aqui](documentacion/despliegue-hero
 
 
 
-Hay que modificar la aplicación añadiendo una serie de ficheros:
 
-Empezaremos creando `Procfile` este se debe guardar en la raiz de la practica. En mi caso mi fichero `Procfile` contiene:
-
-`web: gunicorn PPE.wsgi --log-file -`
-
-Un archivo llamado `requirements.py`, aunque esta creado desde el segundo hito hay que añadir contenido, por lo que quedaría asi:
-
-~~~
-Django==1.8.6
-django-toolbelt==0.0.1
-djangorestframework==3.3.1
-dj-database-url==0.3.0
-dj-static==0.0.6
-gunicorn==19.3.0
-static3==0.6.1
-wheel==0.24.0
-whitenoise==2.0.4
-psycopg2==2.6.1
-Pygments==2.0.2
-~~~
-
-En mi caso uso python 3.4.3, por lo que tengo que indicarselo a Heroku, para ello creamos un archivo `runtime.txt` con:
-~~~
-python-3.4.3
-~~~
-
-Una vez realizado esto, vamos a subir la aplicación a Heroku, para ello hay que realizar:
-
-* heroku login
-
-* heroku create
-
-* git push heroku master
-
-Con estos pasos tendremos nuestra aplicación subida a Heroku
-
-![practica1](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/practica1_zpsiyahfadk.png)
-
-
-Ahora podremos acceder a ella a través de la [url](http://pequeniospueblosespanioles.herokuapp.com/) proporcionada por Heroku
-
-
-Para que los cambios en la aplicación se desplieguen al hacer `git push` debemos hacer lo siguiente:
-
-![heroku](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/heroku_zpswmdusblb.png)
 
 
 ####Configuracion postgresql
