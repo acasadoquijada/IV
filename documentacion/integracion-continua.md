@@ -1,24 +1,24 @@
 ####Travis
 
-Lo primero que debemos hacer es crear un fichero `.travis.yml` que lo situaremos en el directorio raíz de la aplicación. En el se le indica a travis que debe hacer cuando se realice algun cambio en la aplicación.
+Lo primero que debemos hacer es crear un fichero `.travis.yml` que lo situaremos en el directorio raíz de la aplicación. En el se le indica a travis que debe hacer cuando se realice algún cambio en la aplicación.
 
 Primero le indicamos el lenguaje a usar y su versión
 
 ~~~
 language: python
 python:
- - "3.4.3"
+- "3.4.3"
 ~~~
 
-Tambien hay que indicarle como instalar la aplicación y ejecutar los test
+También hay que indicarle como instalar la aplicación y ejecutar los test
 
 ~~~
 
 install:
- - make install
+- make install
 
 script:
- - make test 
+- make test 
 
 ~~~
 
@@ -37,7 +37,7 @@ Una vez dentro debemos seleccionar el repositorio de la aplicacion deseada pulsa
 
 ![practica2](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/practica3_zpsj9ls4qwd.png)
 
-Para que Snap realice los test hay que indicarselo en un stage, para ello escribimos los comandos necesarios
+Para que Snap realice los test hay que indicárselo en un stage, para ello escribimos los comandos necesarios
 
 ~~~
 pip install -r requirements.txt
@@ -54,13 +54,5 @@ Debemos configurar un nuevo pipeline para que snap compruebe que el despliegue e
 Tras esto, cada vez que hagamos un push a nuestro repositorio, Snap comprobará todo lo comentado arriba automáticamente
 
 ![practica4](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/practica5_zpsgkktabyi.png)
-
-
-
-
-
-
-
-
 
 
