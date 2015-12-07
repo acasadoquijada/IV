@@ -18,6 +18,10 @@ Una vez descargada la arrancamos
 
 Nos posicionamos dentro del directorio con `cd IV` y ejecutamos la aplicación con `make run`
 
+Otra opción es ejecutar este [script](../scripts/docker.sh) seguido de `cd IV && make run`
+
+Independientemente de la opción elegida, al lanzar la app, copiamos su dirección ip, la copiamos en nuestro navegador y este es el resultado
+
 ![practica4-2](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica%204/practica4-2_zpsa8yh0krj.png)
 
 
