@@ -20,7 +20,7 @@ Nos posicionamos dentro del directorio con `cd IV` y ejecutamos la aplicación c
 
 Otra opción es ejecutar este [script](../scripts/docker.sh) seguido de `cd IV && make run`
 
-Independientemente de la opción elegida, al lanzar la app, copiamos su dirección ip, la copiamos en nuestro navegador y este es el resultado
+Independientemente de la opción elegida, basta con lanzar la app, obtener su dirección ip y copiarla en el navegador seguida de `:8000`
 
 ![practica4-2](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica%204/practica4-2_zpsa8yh0krj.png)
 
