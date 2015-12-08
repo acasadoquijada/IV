@@ -2,7 +2,7 @@
 
 Lo primero que debemos hacer es crearnos un fichero Dockerfile, este fichero debe en la raíz de la aplicación. En mi caso este es el fichero [Dockerfile](../Dockerfile) que he creado
 
-Una vez creado ahora debemos registrarnos en [docker hub](https://hub.docker.com/), una vez registrados pinchamos en `Create > Create automatic build` y seleccionamos el repositorio de nuestra aplicacion
+Una vez creado ahora debemos registrarnos en [docker hub](https://hub.docker.com/), una vez registrados pinchamos en `Create > Create automatic build` y seleccionamos el repositorio de nuestra aplicacion. Con esto nos aseguramos de que cada vez que realicemos un cambio en el repositorio se cree una nueva imagen con dichos cambios
 
 Si hemos configurado correctamente el `dockerfile` nos debe aparecer una pantalla similar
 
