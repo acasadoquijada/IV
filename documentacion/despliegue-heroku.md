@@ -56,6 +56,10 @@ DATABASE_URL=' postgres://dyrolofjqyvqcl:FWOtWebQ7WTaGIfkoPXqQvs3NM@ec2-107-21-2
 DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
 ~~~
 
+Cabe mencionar que `DATABASE_URL` es la URL de nuestra base de datos `postgresql`, para obtenerla tenemos que irnos a `Heroku Postgres :: Database` en el panel de nuestra aplicación y pinchar en `show`
+
+![db-heroku](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica%204/bd-heroku_zpsepolfln4.png)
+
 Una vez hecha la configuración, tenemos que sincronizar `sqlite` con `postgresql`, para ello basta ejecutar `heroku run python manage.py syncdb`
 
 
