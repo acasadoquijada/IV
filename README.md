@@ -5,7 +5,7 @@
 [![GNU](https://img.shields.io/badge/license-GNU%20GPL%20V3-ff69b4.svg)](LICENSE)
 [![Build Status](https://travis-ci.org/acasadoquijada/IV.svg?branch=master)](https://travis-ci.org/acasadoquijada/IV)
 [![Build Status](https://snap-ci.com/acasadoquijada/IV/branch/master/build_image)](https://snap-ci.com/acasadoquijada/IV/branch/master)
-[![Heroku](https://www.herokucdn.com/deploy/button.png)](http://pequeniospueblosespanioles.herokuapp.com/)
+[![Heroku](https://www.herokucdn.com/deploy/button.png)](http://aplicacion-bares.herokuapp.com/bares/)
 
 ###Introducción
 
