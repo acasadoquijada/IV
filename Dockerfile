@@ -21,4 +21,4 @@ RUN sudo pip install --upgrade pip
 RUN cd IV/ && make install
 
 #Realizamos la sincronizacion entre las BD
-RUN cd IV/ && python3 manage.py syncdb --noinput
+RUN cd IV/ && python3 manage.py makemigrations && python3 manage.py migrate

@@ -25,7 +25,7 @@ He elegido elegido el sistema de test porque es una buena forma de realizar tus 
 
 En mi caso django proporciona un fichero denominado `test.py` que está pensado para colocar nuestros test. Para ejecutarlo basta usar `python3 manage.py test datos`
 
-Mi fichero test se puede consultar [aquí](PPE/datos/tests.py)
+Mi fichero test se puede consultar [aquí](bares/datos/tests.py)
 
 Este fichero ira cambiando según se añadan nuevas funcionalidades a la aplicación
 
@@ -70,6 +70,4 @@ También se ha creado un [script](scripts/docker.sh) que descarga la imagen de l
 ###Fichero de cambios
 
 Se ha añadido un [fichero](documentacion/cambios.md) donde se comentan los cambios mas relevantes entre los diferentes hitos para facilitar la corrección de la práctica.
-
-
 
