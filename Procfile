@@ -1,1 +1,1 @@
-web: gunicorn PPE.wsgi --log-file -
+web: gunicorn practica4.wsgi --log-file -
