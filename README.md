@@ -1,6 +1,6 @@
-#PPE
+#Bares
 
-##Pequeños pueblos españoles
+##Aplicación web sobre bares
 
 [![GNU](https://img.shields.io/badge/license-GNU%20GPL%20V3-ff69b4.svg)](LICENSE)
 [![Build Status](https://travis-ci.org/acasadoquijada/IV.svg?branch=master)](https://travis-ci.org/acasadoquijada/IV)
@@ -12,15 +12,11 @@
 El proyecto de la asignatura se va a llevar a cabo junto al de la asignatura de desarrollo de aplicaciones para internet (DAI).
 He elegido realizar ambos proyectos conjuntamente ya que en DAI realizaremos una aplicación web y el objetivo del proyecto de IV es proporcionar soporte, mediante una infraestructura virtual a dicha aplicación
 
-El proyecto consiste en una aplicación web, creada usando django, para hablar sobre pueblos de nuestro país.
+El proyecto consiste en una aplicación web, creada usando django, sobre bares. Cada bar tiene asociado una serie de tapas que pueden ser añadidas por cualquier cliente registrado.
 
-Los pueblos se agrupan en provincias, y estas a su vez en comunidades autónomas.
+Cada bar tambien cuenta con su dirección mostrada usando google maps. La página de inicio cuenta ademas con un gráfico de los bares mas populares, para determinar la popularidad de un bar nos basamos en sus visitas.
 
-Podremos hablar sobre restaurantes, monumentos, personajes históricos, sitios de interés... dando nuestra opinión y una valoración. Se incluirá un foro para tratar temas con mayor interés.
-
-Dispondrá de una serie de rankings elaborados a partir de las valoraciones de los usuarios.
-
-El objetivo es dar a conocer pueblos pequeños de nuestra región
+Como curiosidad la aplicación cuenta con 3 botones para aumentar, disminuir y resetear el tamaño de la letra.
 
 
 ###Tests
@@ -53,7 +49,7 @@ Se puede consultar el proceso de configuración de ambos sistemas [aquí](docume
 
 El PaaS elegido es [Heroku](https://id.heroku.com/), ha sido elegido por su facilidad de uso y funcionalidad.
 
-El enlace de mi aplicación en heroku es el [siguiente](http://pequeniospueblosespanioles.herokuapp.com/)
+El enlace de mi aplicación en heroku es el [siguiente](http://aplicacion-bares.herokuapp.com/bares/)
 
 Se puede consultar el proceso de despliegue [aquí](documentacion/despliegue-heroku.md)
 
