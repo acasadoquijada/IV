@@ -18,5 +18,5 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "practica4.settings")
 application = get_wsgi_application()
 
 #application = Cling(get_wsgi_application())
-#application = DjangoWhiteNoise(application)
+application = DjangoWhiteNoise(application)
 

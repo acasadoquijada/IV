@@ -15,7 +15,7 @@ import os,django
 import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+#SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
