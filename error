@@ -1,0 +1,101 @@
+2016-01-17T15:04:04.098475+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/template/loader_tags.py", line 69, in render
+2016-01-17T15:04:04.098477+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/template/base.py", line 988, in render
+2016-01-17T15:04:04.098480+00:00 app[web.1]:     if match:
+2016-01-17T15:04:04.098488+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+2016-01-17T15:04:04.098496+00:00 app[web.1]:     raise value.with_traceback(tb)
+2016-01-17T15:04:04.098498+00:00 app[web.1]: LINE 1: ...res_bar"."numero_visita", "bares_bar"."slug" FROM "bares_bar...
+2016-01-17T15:04:04.132547+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+2016-01-17T15:04:04.132575+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/template/base.py", line 955, in render_annotated
+2016-01-17T15:04:04.132575+00:00 app[web.1]:     return self.render(context)
+2016-01-17T15:04:04.098458+00:00 app[web.1]:     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+2016-01-17T15:04:04.098481+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/db/models/query.py", line 262, in __bool__
+2016-01-17T15:04:04.098483+00:00 app[web.1]:     self._result_cache = list(self.iterator())
+2016-01-17T15:04:04.098496+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+2016-01-17T15:04:04.098505+00:00 app[web.1]: 
+2016-01-17T15:04:04.132553+00:00 app[web.1]: The above exception was the direct cause of the following exception:
+2016-01-17T15:04:04.132553+00:00 app[web.1]: 
+2016-01-17T15:04:04.132554+00:00 app[web.1]: Traceback (most recent call last):
+2016-01-17T15:04:04.132556+00:00 app[web.1]:     response = self.process_exception_by_middleware(e, request)
+2016-01-17T15:04:04.132558+00:00 app[web.1]:     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+2016-01-17T15:04:04.132580+00:00 app[web.1]:     return self.render(context)
+2016-01-17T15:04:04.098461+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/template/loader.py", line 97, in render_to_string
+2016-01-17T15:04:04.098464+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/template/base.py", line 206, in render
+2016-01-17T15:04:04.098465+00:00 app[web.1]:     return self._render(context)
+2016-01-17T15:04:04.098482+00:00 app[web.1]:     self._fetch_all()
+2016-01-17T15:04:04.098485+00:00 app[web.1]:     results = compiler.execute_sql()
+2016-01-17T15:04:04.098471+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/template/base.py", line 197, in _render
+2016-01-17T15:04:04.098476+00:00 app[web.1]:     result = block.nodelist.render(context)
+2016-01-17T15:04:04.098494+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/db/utils.py", line 95, in __exit__
+2016-01-17T15:04:04.132542+00:00 app[web.1]: Internal Server Error: /bares/
+2016-01-17T15:04:04.132560+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/shortcuts.py", line 67, in render
+2016-01-17T15:04:04.132569+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/template/base.py", line 955, in render_annotated
+2016-01-17T15:04:04.132571+00:00 app[web.1]:     return compiled_parent._render(context)
+2016-01-17T15:04:04.132577+00:00 app[web.1]:     result = block.nodelist.render(context)
+2016-01-17T15:04:04.132578+00:00 app[web.1]:     bit = node.render_annotated(context)
+2016-01-17T15:04:04.132580+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/template/defaulttags.py", line 325, in render
+2016-01-17T15:04:04.132598+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+2016-01-17T15:04:04.132585+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/db/models/query.py", line 52, in __iter__
+2016-01-17T15:04:04.132597+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/utils/six.py", line 685, in reraise
+2016-01-17T15:04:04.132599+00:00 app[web.1]:     return self.cursor.execute(sql, params)
+2016-01-17T15:04:04.132602+00:00 app[web.1]: 
+2016-01-17T15:04:04.098467+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/template/base.py", line 988, in render
+2016-01-17T15:04:04.098473+00:00 app[web.1]:     bit = node.render_annotated(context)
+2016-01-17T15:04:04.098479+00:00 app[web.1]:     return self.render(context)
+2016-01-17T15:04:04.098485+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/db/models/sql/compiler.py", line 852, in execute_sql
+2016-01-17T15:04:04.132550+00:00 app[web.1]: LINE 1: ...res_bar"."numero_visita", "bares_bar"."slug" FROM "bares_bar...
+2016-01-17T15:04:04.132568+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/template/base.py", line 988, in render
+2016-01-17T15:04:04.132570+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/template/loader_tags.py", line 173, in render
+2016-01-17T15:04:04.132579+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/template/base.py", line 955, in render_annotated
+2016-01-17T15:04:04.132581+00:00 app[web.1]:     if match:
+2016-01-17T15:04:04.132582+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/db/models/query.py", line 262, in __bool__
+2016-01-17T15:04:04.132589+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+2016-01-17T15:04:04.132601+00:00 app[web.1]: LINE 1: ...res_bar"."numero_visita", "bares_bar"."slug" FROM "bares_bar...
+2016-01-17T15:04:04.132586+00:00 app[web.1]:     results = compiler.execute_sql()
+2016-01-17T15:04:04.132588+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/db/backends/utils.py", line 79, in execute
+2016-01-17T15:04:04.132598+00:00 app[web.1]:     raise value.with_traceback(tb)
+2016-01-17T15:04:04.132584+00:00 app[web.1]:     self._result_cache = list(self.iterator())
+2016-01-17T15:04:04.132595+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/db/utils.py", line 95, in __exit__
+2016-01-17T15:04:04.098466+00:00 app[web.1]:     return self.nodelist.render(context)
+2016-01-17T15:04:04.098468+00:00 app[web.1]:     bit = node.render_annotated(context)
+2016-01-17T15:04:04.098470+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/template/loader_tags.py", line 173, in render
+2016-01-17T15:04:04.098486+00:00 app[web.1]:     cursor.execute(sql, params)
+2016-01-17T15:04:04.098495+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/utils/six.py", line 685, in reraise
+2016-01-17T15:04:04.098497+00:00 app[web.1]:     return self.cursor.execute(sql, params)
+2016-01-17T15:04:04.132552+00:00 app[web.1]: 
+2016-01-17T15:04:04.132565+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/template/base.py", line 206, in render
+2016-01-17T15:04:04.132565+00:00 app[web.1]:     return self._render(context)
+2016-01-17T15:04:04.132567+00:00 app[web.1]:     return self.nodelist.render(context)
+2016-01-17T15:04:04.132589+00:00 app[web.1]:     return super(CursorDebugWrapper, self).execute(sql, params)
+2016-01-17T15:04:04.132602+00:00 app[web.1]:                                                              ^
+2016-01-17T15:04:04.132548+00:00 app[web.1]:     return self.cursor.execute(sql, params)
+2016-01-17T15:04:04.132559+00:00 app[web.1]:     return render(request, 'bares/index.html', context_dict)
+2016-01-17T15:04:04.132561+00:00 app[web.1]:     template_name, context, request=request, using=using)
+2016-01-17T15:04:04.132562+00:00 app[web.1]:     return template.render(context, request)
+2016-01-17T15:04:04.132564+00:00 app[web.1]:     return self.template.render(context)
+2016-01-17T15:04:04.132583+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/db/models/query.py", line 1074, in _fetch_all
+2016-01-17T15:04:04.132586+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.4/site-packages/django/db/models/sql/compiler.py", line 852, in execute_sql
+2016-01-17T15:04:04.132587+00:00 app[web.1]:     cursor.execute(sql, params)
+2016-01-17T15:04:04.132590+00:00 app[web.1]:     return self.cursor.execute(sql, params)
+2016-01-17T15:04:04.132596+00:00 app[web.1]:     six.reraise(dj_exc_type, dj_exc_value, traceback)
+2016-01-17T15:04:04.446476+00:00 app[web.1]: [2016-01-17 15:04:04 +0000] [3] [INFO] Handling signal: term
+2016-01-17T15:04:04.733897+00:00 heroku[router]: sock=client at=warning code=H27 desc="Client Request Interrupted" method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=0249688f-1764-4f66-9c80-94028e629872 fwd="83.49.147.202" dyno=web.1 connect=8ms service=16799ms status=499 bytes=7455
+2016-01-17T15:04:04.713408+00:00 app[web.1]: [2016-01-17 15:04:04 +0000] [8] [INFO] Worker exiting (pid: 8)
+2016-01-17T15:04:04.859707+00:00 app[web.1]: [2016-01-17 15:04:04 +0000] [3] [INFO] Starting gunicorn 19.4.5
+2016-01-17T15:04:04.968693+00:00 app[web.1]: [2016-01-17 15:04:04 +0000] [8] [INFO] Booting worker with pid: 8
+2016-01-17T15:04:04.865568+00:00 app[web.1]: [2016-01-17 15:04:04 +0000] [3] [INFO] Listening at: http://0.0.0.0:35219 (3)
+2016-01-17T15:04:04.865721+00:00 app[web.1]: [2016-01-17 15:04:04 +0000] [3] [INFO] Using worker: sync
+2016-01-17T15:04:04.869715+00:00 app[web.1]: [2016-01-17 15:04:04 +0000] [7] [INFO] Booting worker with pid: 7
+2016-01-17T15:04:05.297202+00:00 heroku[router]: sock=client at=warning code=H27 desc="Client Request Interrupted" method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=975717f0-eecf-4dd8-b919-3695b626c49e fwd="83.49.147.202" dyno=web.1 connect=2ms service=17368ms status=499 bytes=215
+2016-01-17T15:04:05.351875+00:00 heroku[web.1]: State changed from starting to up
+2016-01-17T15:04:05.389710+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=9d177e22-5fcf-4fec-9d31-c7ae115f8642 fwd="83.49.147.202" dyno=web.1 connect=2ms service=16999ms status=503 bytes=0
+2016-01-17T15:04:05.394384+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=a63ec53d-6e5c-4c92-900c-3063500b41df fwd="83.49.147.202" dyno=web.1 connect=2ms service=17172ms status=503 bytes=0
+2016-01-17T15:04:05.288478+00:00 app[web.1]: [2016-01-17 15:04:05 +0000] [7] [INFO] Worker exiting (pid: 7)
+2016-01-17T15:04:05.394719+00:00 app[web.1]: [2016-01-17 15:04:05 +0000] [3] [INFO] Shutting down: Master
+2016-01-17T15:04:05.401392+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=4a7ea536-70a0-4313-b121-4c38c73ca14d fwd="83.49.147.202" dyno=web.1 connect=2ms service=16909ms status=503 bytes=0
+2016-01-17T15:04:05.392311+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=4e786f62-e8cb-465a-9822-1e3aa9113fd3 fwd="83.49.147.202" dyno=web.1 connect=2ms service=16754ms status=503 bytes=0
+2016-01-17T15:04:05.398239+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=b2c9f720-a161-49d8-9e1e-da80a6412354 fwd="83.49.147.202" dyno=web.1 connect=2ms service=17349ms status=503 bytes=0
+2016-01-17T15:04:05.420351+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=5ecdfe0c-9248-468d-9c20-6595469882ca fwd="83.49.147.202" dyno=web.1 connect=2ms service=16991ms status=503 bytes=0
+2016-01-17T15:04:05.404391+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=4b3f9992-106b-4574-b606-8add284ea2c2 fwd="83.49.147.202" dyno=web.1 connect=2ms service=17314ms status=503 bytes=0
+2016-01-17T15:04:05.395280+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=9b099b84-967f-42d7-87cb-be7980b1cad3 fwd="83.49.147.202" dyno=web.1 connect=2ms service=17416ms status=503 bytes=0
+2016-01-17T15:04:06.276612+00:00 heroku[web.1]: Process exited with status 0
+2016-01-17T15:04:05.404193+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=749f0a82-76c4-483e-b851-93524cee9c62 fwd="83.49.147.202" dyno=web.1 connect=2ms service=17153ms status=503 bytes=0
