@@ -24,6 +24,5 @@ class Tapa(models.Model):
     bar = models.ForeignKey(Bar)
     nombre = models.CharField(max_length=128)
     votos = models.IntegerField(default=0)
-    imagen = models.ImageField(upload_to='imagenes_tapas', blank=True)
     def __str__(self):      
         return self.nombre

@@ -1,0 +1,101 @@
+2016-01-16T17:52:40.774998+00:00 heroku[web.1]: Starting process with command `gunicorn practica4.wsgi --log-file -`
+2016-01-16T17:52:41.527013+00:00 app[web.1]: [2016-01-16 17:52:41 +0000] [9] [INFO] Worker exiting (pid: 9)
+2016-01-16T17:52:41.527151+00:00 app[web.1]: [2016-01-16 17:52:41 +0000] [3] [INFO] Handling signal: term
+2016-01-16T17:52:41.529770+00:00 app[web.1]: [2016-01-16 17:52:41 +0000] [7] [INFO] Worker exiting (pid: 7)
+2016-01-16T17:52:41.667186+00:00 app[web.1]: [2016-01-16 17:52:41 +0000] [3] [INFO] Shutting down: Master
+2016-01-16T17:52:42.664336+00:00 heroku[web.1]: Process exited with status 0
+2016-01-16T17:52:43.801275+00:00 app[web.1]: [2016-01-16 17:52:43 +0000] [3] [INFO] Starting gunicorn 19.4.5
+2016-01-16T17:52:43.887441+00:00 app[web.1]: [2016-01-16 17:52:43 +0000] [8] [INFO] Booting worker with pid: 8
+2016-01-16T17:52:43.813263+00:00 app[web.1]: [2016-01-16 17:52:43 +0000] [3] [INFO] Listening at: http://0.0.0.0:51684 (3)
+2016-01-16T17:52:43.813425+00:00 app[web.1]: [2016-01-16 17:52:43 +0000] [3] [INFO] Using worker: sync
+2016-01-16T17:52:43.818869+00:00 app[web.1]: [2016-01-16 17:52:43 +0000] [7] [INFO] Booting worker with pid: 7
+2016-01-16T17:52:44.553350+00:00 heroku[web.1]: State changed from starting to up
+2016-01-16T18:27:32.691858+00:00 heroku[web.1]: Idling
+2016-01-16T18:27:32.692414+00:00 heroku[web.1]: State changed from up to down
+2016-01-16T18:27:36.770278+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-01-16T18:27:38.096389+00:00 app[web.1]: [2016-01-16 18:27:38 +0000] [8] [INFO] Worker exiting (pid: 8)
+2016-01-16T18:27:38.096596+00:00 app[web.1]: [2016-01-16 18:27:38 +0000] [7] [INFO] Worker exiting (pid: 7)
+2016-01-16T18:27:38.096087+00:00 app[web.1]: [2016-01-16 18:27:38 +0000] [3] [INFO] Handling signal: term
+2016-01-16T18:27:38.719215+00:00 app[web.1]: [2016-01-16 18:27:38 +0000] [3] [INFO] Shutting down: Master
+2016-01-16T18:27:39.806971+00:00 heroku[web.1]: Process exited with status 0
+2016-01-16T19:17:34.613356+00:00 heroku[web.1]: Unidling
+2016-01-16T19:17:34.613356+00:00 heroku[web.1]: State changed from down to starting
+2016-01-16T19:17:37.282591+00:00 heroku[web.1]: Starting process with command `gunicorn practica4.wsgi --log-file -`
+2016-01-16T19:17:39.141295+00:00 app[web.1]: [2016-01-16 19:17:39 +0000] [3] [INFO] Listening at: http://0.0.0.0:47588 (3)
+2016-01-16T19:17:39.141458+00:00 app[web.1]: [2016-01-16 19:17:39 +0000] [3] [INFO] Using worker: sync
+2016-01-16T19:17:39.145071+00:00 app[web.1]: [2016-01-16 19:17:39 +0000] [7] [INFO] Booting worker with pid: 7
+2016-01-16T19:17:39.137546+00:00 app[web.1]: [2016-01-16 19:17:39 +0000] [3] [INFO] Starting gunicorn 19.4.5
+2016-01-16T19:17:39.214958+00:00 app[web.1]: [2016-01-16 19:17:39 +0000] [8] [INFO] Booting worker with pid: 8
+2016-01-16T19:17:39.664499+00:00 heroku[web.1]: State changed from starting to up
+2016-01-16T19:17:40.843160+00:00 heroku[router]: at=info method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=66be70c2-262c-42d3-9916-cda355df1118 fwd="217.216.7.129,66.249.93.26" dyno=web.1 connect=0ms service=150ms status=200 bytes=6006
+2016-01-16T19:17:42.866698+00:00 heroku[router]: at=info method=GET path="/bares/reclama_datos/" host=aplicacion-bares.herokuapp.com request_id=eb385d03-67fe-452b-bbbc-0f6dc1c3526a fwd="217.216.7.129,66.249.93.29" dyno=web.1 connect=1ms service=80ms status=200 bytes=282
+2016-01-16T19:53:34.112087+00:00 heroku[web.1]: Idling
+2016-01-16T19:53:34.112988+00:00 heroku[web.1]: State changed from up to down
+2016-01-16T19:53:39.223925+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-01-16T19:53:40.516794+00:00 app[web.1]: [2016-01-16 19:53:40 +0000] [3] [INFO] Handling signal: term
+2016-01-16T19:53:40.516931+00:00 app[web.1]: [2016-01-16 19:53:40 +0000] [8] [INFO] Worker exiting (pid: 8)
+2016-01-16T19:53:40.618163+00:00 app[web.1]: [2016-01-16 19:53:40 +0000] [3] [INFO] Shutting down: Master
+2016-01-16T19:53:40.517744+00:00 app[web.1]: [2016-01-16 19:53:40 +0000] [7] [INFO] Worker exiting (pid: 7)
+2016-01-16T19:53:41.370105+00:00 heroku[web.1]: Process exited with status 0
+2016-01-16T20:08:12.555910+00:00 heroku[web.1]: Unidling
+2016-01-16T20:08:12.556217+00:00 heroku[web.1]: State changed from down to starting
+2016-01-16T20:08:15.405756+00:00 heroku[web.1]: Starting process with command `gunicorn practica4.wsgi --log-file -`
+2016-01-16T20:08:17.308289+00:00 app[web.1]: [2016-01-16 20:08:17 +0000] [3] [INFO] Starting gunicorn 19.4.5
+2016-01-16T20:08:17.316716+00:00 app[web.1]: [2016-01-16 20:08:17 +0000] [3] [INFO] Using worker: sync
+2016-01-16T20:08:17.363081+00:00 app[web.1]: [2016-01-16 20:08:17 +0000] [8] [INFO] Booting worker with pid: 8
+2016-01-16T20:08:17.326663+00:00 app[web.1]: [2016-01-16 20:08:17 +0000] [7] [INFO] Booting worker with pid: 7
+2016-01-16T20:08:17.316300+00:00 app[web.1]: [2016-01-16 20:08:17 +0000] [3] [INFO] Listening at: http://0.0.0.0:43647 (3)
+2016-01-16T20:08:17.608050+00:00 heroku[web.1]: State changed from starting to up
+2016-01-16T20:08:18.856467+00:00 heroku[router]: at=info method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=cb89e929-c4a1-4d41-b44f-c4382195caaa fwd="217.216.7.129,66.249.93.95" dyno=web.1 connect=0ms service=223ms status=200 bytes=6006
+2016-01-16T20:08:20.608785+00:00 heroku[router]: at=info method=GET path="/bares/reclama_datos/" host=aplicacion-bares.herokuapp.com request_id=4140a5a9-9bb9-45c6-be74-71bba1d7cedd fwd="217.216.7.129,66.249.93.166" dyno=web.1 connect=2ms service=98ms status=200 bytes=282
+2016-01-16T20:08:25.217680+00:00 heroku[router]: at=info method=GET path="/bares/bar/bar-pepito/" host=aplicacion-bares.herokuapp.com request_id=d05ac37f-3ead-4c97-acd3-a332c3afb0e8 fwd="217.216.7.129,66.249.93.166" dyno=web.1 connect=3ms service=32ms status=200 bytes=7819
+2016-01-16T20:08:26.612966+00:00 heroku[router]: at=info method=GET path="/bares/reclama_datos/" host=aplicacion-bares.herokuapp.com request_id=e2bdca43-fcd8-4cd3-8062-728ca2a7a474 fwd="217.216.7.129,66.249.93.99" dyno=web.1 connect=0ms service=6ms status=200 bytes=282
+2016-01-16T20:43:46.330126+00:00 heroku[web.1]: Idling
+2016-01-16T20:43:46.330773+00:00 heroku[web.1]: State changed from up to down
+2016-01-16T20:43:50.099957+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-01-16T20:43:51.400318+00:00 app[web.1]: [2016-01-16 20:43:51 +0000] [3] [INFO] Shutting down: Master
+2016-01-16T20:43:51.318514+00:00 app[web.1]: [2016-01-16 20:43:51 +0000] [7] [INFO] Worker exiting (pid: 7)
+2016-01-16T20:43:51.318567+00:00 app[web.1]: [2016-01-16 20:43:51 +0000] [8] [INFO] Worker exiting (pid: 8)
+2016-01-16T20:43:51.319048+00:00 app[web.1]: [2016-01-16 20:43:51 +0000] [3] [INFO] Handling signal: term
+2016-01-16T20:43:52.165601+00:00 heroku[web.1]: Process exited with status 0
+2016-01-17T14:09:50.826722+00:00 heroku[api]: Deploy f582c87 by alex22alex33@gmail.com
+2016-01-17T14:09:50.826757+00:00 heroku[api]: Release v83 created by alex22alex33@gmail.com
+2016-01-17T14:09:50.996997+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-17T14:09:50.997001+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-01-17T14:10:34.095438+00:00 heroku[web.1]: Unidling
+2016-01-17T14:10:34.095711+00:00 heroku[web.1]: State changed from down to starting
+2016-01-17T14:10:37.075063+00:00 heroku[web.1]: Starting process with command `gunicorn practica4.wsgi --log-file -`
+2016-01-17T14:10:39.482192+00:00 app[web.1]: [2016-01-17 14:10:39 +0000] [3] [INFO] Starting gunicorn 19.4.5
+2016-01-17T14:10:39.505955+00:00 app[web.1]: [2016-01-17 14:10:39 +0000] [8] [INFO] Booting worker with pid: 8
+2016-01-17T14:10:39.486336+00:00 app[web.1]: [2016-01-17 14:10:39 +0000] [3] [INFO] Listening at: http://0.0.0.0:9299 (3)
+2016-01-17T14:10:39.486492+00:00 app[web.1]: [2016-01-17 14:10:39 +0000] [3] [INFO] Using worker: sync
+2016-01-17T14:10:39.492132+00:00 app[web.1]: [2016-01-17 14:10:39 +0000] [7] [INFO] Booting worker with pid: 7
+2016-01-17T14:10:40.842904+00:00 heroku[web.1]: State changed from starting to up
+2016-01-17T14:10:42.376422+00:00 heroku[router]: at=info method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=820f83e0-ef2e-4eba-b14d-110675e03020 fwd="83.49.147.202" dyno=web.1 connect=1ms service=230ms status=500 bytes=253
+2016-01-17T14:10:42.804919+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=aplicacion-bares.herokuapp.com request_id=5db43dd4-4375-4c00-869d-d4c222dd8655 fwd="83.49.147.202" dyno=web.1 connect=1ms service=58ms status=404 bytes=285
+2016-01-17T14:10:47.458067+00:00 heroku[router]: at=info method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=a3034062-33a0-49cb-8e35-bded624fe81d fwd="83.49.147.202" dyno=web.1 connect=2ms service=153ms status=500 bytes=253
+2016-01-17T14:10:51.399262+00:00 heroku[router]: at=info method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=44ae52c0-a3bb-42fa-9aeb-a3bae03863a4 fwd="83.49.147.202" dyno=web.1 connect=1ms service=160ms status=500 bytes=253
+2016-01-17T14:13:17.859067+00:00 heroku[router]: at=info method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=035c2705-5333-49bc-93d4-a16f9fa6538f fwd="83.49.147.202" dyno=web.1 connect=6ms service=281ms status=500 bytes=253
+2016-01-17T14:13:53.522003+00:00 heroku[router]: at=info method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=a17fdac1-ee3e-434f-b7f4-40f81a209938 fwd="83.49.147.202" dyno=web.1 connect=1ms service=105ms status=500 bytes=253
+2016-01-17T14:14:47.845480+00:00 heroku[router]: at=info method=GET path="/" host=aplicacion-bares.herokuapp.com request_id=98321b4c-01a3-40d3-b21f-dc2e94d79fe4 fwd="83.49.147.202" dyno=web.1 connect=1ms service=5ms status=404 bytes=274
+2016-01-17T14:14:52.617048+00:00 heroku[router]: at=info method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=053aa9b8-e87a-4010-b93d-5e4142664569 fwd="83.49.147.202" dyno=web.1 connect=0ms service=85ms status=500 bytes=253
+2016-01-17T14:14:57.087346+00:00 heroku[api]: Deploy 12389f5 by alex22alex33@gmail.com
+2016-01-17T14:14:57.087346+00:00 heroku[api]: Release v84 created by alex22alex33@gmail.com
+2016-01-17T14:14:57.229015+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-17T14:14:57.229024+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-01-17T14:14:57.719573+00:00 heroku[web.1]: State changed from up to starting
+2016-01-17T14:15:00.217587+00:00 heroku[web.1]: Starting process with command `gunicorn practica4.wsgi --log-file -`
+2016-01-17T14:15:01.916488+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-01-17T14:15:02.669664+00:00 app[web.1]: [2016-01-17 14:15:02 +0000] [3] [INFO] Starting gunicorn 19.4.5
+2016-01-17T14:15:02.763728+00:00 app[web.1]: [2016-01-17 14:15:02 +0000] [8] [INFO] Booting worker with pid: 8
+2016-01-17T14:15:02.685869+00:00 app[web.1]: [2016-01-17 14:15:02 +0000] [3] [INFO] Listening at: http://0.0.0.0:3034 (3)
+2016-01-17T14:15:02.686049+00:00 app[web.1]: [2016-01-17 14:15:02 +0000] [3] [INFO] Using worker: sync
+2016-01-17T14:15:02.698910+00:00 app[web.1]: [2016-01-17 14:15:02 +0000] [7] [INFO] Booting worker with pid: 7
+2016-01-17T14:15:02.896704+00:00 app[web.1]: [2016-01-17 14:15:02 +0000] [7] [INFO] Worker exiting (pid: 7)
+2016-01-17T14:15:02.912679+00:00 app[web.1]: [2016-01-17 14:15:02 +0000] [3] [INFO] Handling signal: term
+2016-01-17T14:15:02.900321+00:00 app[web.1]: [2016-01-17 14:15:02 +0000] [8] [INFO] Worker exiting (pid: 8)
+2016-01-17T14:15:02.923241+00:00 app[web.1]: [2016-01-17 14:15:02 +0000] [3] [INFO] Shutting down: Master
+2016-01-17T14:15:03.840893+00:00 heroku[web.1]: State changed from starting to up
+2016-01-17T14:15:03.756024+00:00 heroku[web.1]: Process exited with status 0
+2016-01-17T14:15:49.466418+00:00 heroku[router]: at=info method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=da7c7e9c-1a87-49b4-aaf0-a3eaa8ad24e2 fwd="83.49.147.202" dyno=web.1 connect=1ms service=1679ms status=500 bytes=253
+2016-01-17T14:16:59.883303+00:00 heroku[router]: at=info method=GET path="/bares/" host=aplicacion-bares.herokuapp.com request_id=cc894566-e178-4fa3-b9c8-eb151ddfa296 fwd="83.49.147.202" dyno=web.1 connect=2ms service=187ms status=500 bytes=253
