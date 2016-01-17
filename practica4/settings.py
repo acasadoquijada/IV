@@ -15,7 +15,7 @@ import os,django
 import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-#SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -94,10 +94,10 @@ DATABASES = {
     }
 }
 
-#ON_HEROKU = os.environ.get('PORT')
-#if ON_HEROKU:
-#	DATABASE_URL='postgres://dyrolofjqyvqcl:FWOtWebQ7WTaGIfkoPXqQvs3NM@ec2-107-21-223-110.compute-1.amazonaws.com:5432/d2s7fpae9snpfo'
-#	DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
+ON_HEROKU = os.environ.get('PORT')
+if ON_HEROKU:
+	DATABASE_URL='postgres://dyrolofjqyvqcl:FWOtWebQ7WTaGIfkoPXqQvs3NM@ec2-107-21-223-110.compute-1.amazonaws.com:5432/d2s7fpae9snpfo'
+	DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
