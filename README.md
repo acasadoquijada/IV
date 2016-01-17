@@ -18,6 +18,8 @@ Cada bar tambien cuenta con su dirección mostrada usando google maps. La págin
 
 Como curiosidad la aplicación cuenta con 3 botones para aumentar, disminuir y resetear el tamaño de la letra.
 
+Nota: En los distintos procesos de configuración realizados durante este proyecto aparecen imágenes de dicha configuración de otra aplicación, PPE, esto se debe a que en un principio se comenzó a trabajar sobre ella pero se desecho por la aplicación actual, bares. Cabe destacar que las configuraciones de ambas aplicaciones son idénticas, por eso no se han vuelto a realizar las capturas de pantalla
+
 
 ###Tests
 
@@ -25,7 +27,7 @@ He elegido elegido el sistema de test porque es una buena forma de realizar tus 
 
 En mi caso django proporciona un fichero denominado `test.py` que está pensado para colocar nuestros test. Para ejecutarlo basta usar `python3 manage.py test datos`
 
-Mi fichero test se puede consultar [aquí](bares/datos/tests.py)
+Mi fichero test se puede consultar [aquí](bares/tests.py)
 
 Este fichero ira cambiando según se añadan nuevas funcionalidades a la aplicación
 
@@ -60,7 +62,7 @@ También se ha creado un [script](scripts/despliegue-heroku.sh) que permite desc
 
 Como entorno de pruebas he elegido [docker](https://www.docker.com/) debido a que nos permite el despliegue de aplicaciones en contenedores aislados de la máquina anfitriona.
 
-El enlace a mi imagen es [este](https://hub.docker.com/r/acasadoquijada/ppe/)
+El enlace a mi imagen es [este](https://hub.docker.com/r/acasadoquijada/bares/)
 
 Se puede consultar el proceso de creación de la imagen [aquí](documentacion/docker.md)
 
