@@ -55,7 +55,7 @@ El enlace de mi aplicación en heroku es el [siguiente](http://aplicacion-bares.
 
 Se puede consultar el proceso de despliegue [aquí](documentacion/despliegue-heroku.md)
 
-[Aquí](documentacion/despliegue-dai.md) Se puede consultar tambien el despliegue explicado para la asignatura DAI
+Se puede consultar tambien el despliegue explicado para la asignatura DAI en este [enlace](documentacion/despliegue-dai.md)
 
 También se ha creado un [script](scripts/despliegue-heroku.sh) que permite descargar la aplicación desde el repositorio y desplegarla en heroku simplemente ejecutándolo
 
