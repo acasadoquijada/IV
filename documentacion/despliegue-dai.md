@@ -12,5 +12,5 @@ Una vez hecho lo anterior procedemos a desplegarlo a Heroku.
 
 Tenemos que utilizar una herramienta de integración continua como snap-ci, [aquí](integracion-continua.md#snap-ci) se puede ver como ha de utilizarse, también se ha utilizado [travis](integracion-continua.md#travis)
 
-Tras configurar correctamente la integración continua desplegaremos la aplicación a Heroku, para ver como se ha realizado el despliegue podemos consultar este [enlace](despliegue-heroku.md)
+Tras configurar correctamente la integración continua desplegaremos la aplicación a Heroku, para ver como se ha realizado el despliegue podemos consultar este [enlace](despliegue-heroku.md#despliegue-heroku)
 
