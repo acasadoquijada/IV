@@ -17,6 +17,6 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "proyectoDAI.settings")
 
 application = get_wsgi_application()
 
-application = Cling(get_wsgi_application())
+#application = Cling(get_wsgi_application())
 
 
