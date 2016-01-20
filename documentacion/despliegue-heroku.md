@@ -35,15 +35,8 @@ Una vez que lo tengamos definido, hay que indicarle a heroku que espere a que sn
 
 Para utilizar la base de datos `postgresql` que nos proporciona heroku tenemos que realizar lo siguiente:
 
-Editar el archivo `wsgi.py` añadiendo
+Editar el archivo `setting.py` añadiendo
 
-~~~
-from dj_static import Cling
-application = Cling(get_wsgi_application())
-
-~~~
-
-También hay que editar `setting.py` añadiendo
 ~~~
 
 import dj_database_url
