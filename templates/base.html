@@ -112,7 +112,7 @@
                 <li><a href="{% url 'index' %}">Home</a></li>
                     {% if user.is_authenticated %}
                         <li><a href="/bares/add_tapa/">Nueva tapa</a></li>
-                        <li><a href="{% url 'auth_logout' %}?next=/bares/">Logout</a></li>
+                        <li><a href="{% url 'auth_logout' %}?next=/bares/">Salir</a></li>
                     {% else %}
                         <li><a href="{% url 'registration_register' %}">Regístrate</a></li>
                         <li><a href="{% url 'auth_login' %}">Login</a></li>
