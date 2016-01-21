@@ -16,8 +16,15 @@ El propio heroku se encarga de copiar los [archivos estaticos](https://devcenter
 
 ![snap](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/heroku_zpsiz9mqjp4.png) 
 
-
 Aunque en la misma web nos recomienda usar [whitenoise](https://devcenter.heroku.com/articles/django-assets#whitenoise) para tal tarea, por lo que he decidio usarlo, se puede ver que uso whitenoise visitando mi fichero [requirements.txt](../requirements.txt)
 
 Tras configurar correctamente la integración continua desplegaremos la aplicación a Heroku, para ver como se ha realizado el despliegue podemos consultar este [enlace](despliegue-heroku.md#despliegue-heroku)
+
+
+
+
+
+
+
+
 
