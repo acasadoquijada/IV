@@ -94,10 +94,10 @@ DATABASES = {
     }
 }
 
-ON_HEROKU = os.environ.get('PORT')
-if ON_HEROKU:
-	DATABASE_URL='postgres://ovstwqrtewhvix:VOEKSh9Kvd6W4hc4D_Lwmy1GCX@ec2-107-21-223-72.compute-1.amazonaws.com:5432/ddgpspbp338hah'
-	DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
+#ON_HEROKU = os.environ.get('PORT')
+#if ON_HEROKU:
+#	DATABASE_URL='postgres://ovstwqrtewhvix:VOEKSh9Kvd6W4hc4D_Lwmy1GCX@ec2-107-21-223-72.compute-1.amazonaws.com:5432/ddgpspbp338hah'
+#	DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
@@ -144,7 +144,7 @@ STATICFILES_DIRS = (
     STATIC_PATH,
 )
 
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 REGISTRATION_OPEN = True                # If True, users can register
 ACCOUNT_ACTIVATION_DAYS = 7     # One-week activation window; you may, of course, use a different value.
