@@ -1,10 +1,14 @@
 language: python
 sudo: required
 python:
- - "3.4.3"
-
+- 3.4.3
 install:
- - make install
-
+- make install
 script:
- - make test 
+- make test
+deploy:
+  provider: heroku
+  api_key:
+    secure: UHWXY02HeQC/+luQP8W+vjoCoQTURbM09LkiuycdkNRzRxu36cYtyHylp1GsaZhAE2QAGjUpDjG6GPsrBMJULvMsSIqG0F/eqRjeWhA7nU5TKJIn55ZnVgv0nlqqQ34UQMJdqJnR5mA9k/UBss6WNBdjNOLYuedX39tKAiJiTvWsjYT2VTavyQdaHxBzGWCK6wlUnxJ6/a97DCtmZ04KyY+9JfjBopMchznUSyMzACeT5B4k9ALAqir2mFwZg6uXwPkCNWEMO2+tWohL6Y7f0MexAwJ0YrmckeRcoIAdGva1a+s0DNaNv9Ee0GzKyy6+SUH1lrN+DuvRCCOaTq6h6JdqAkku6h7s4SCg9GVxF7v/vorRbFPFB4xM9oC+3fgapkG7ICepvKpHIu2f4ch6AAeEEGQdmPbA0HW75CecZMAYA3epz2luEUaaZEDxeyrwEWBQe53O1vQcMLc7T3cBs4EyAz0JkQEgpURmyOqkWjYb0gIAjsSU21t9beHsDqgRAb0zf+wCa+M9dcFALmkwuWkQWB/OjMI8Sx/rWB3cr2FNX6r/eAbEmSgahPthe/GXuGa3Et89hzbB8vUaZIlPht+LZQBL2ihgOMeqpQ5X44iGLBTcsP2V5ipwg0alNx2+OBw338sRNyhjtwhWWycAVFIijs/V9g36GU5mZhFQsNg=
+    
+  app: aplicacion-bares
