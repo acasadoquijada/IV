@@ -10,27 +10,6 @@
 <html>
     <head>
         <title>Bares</title>
-    <script> 
-    
-    $('#megusta').click(function () {
-    var comments = $('#txtComments').val();
-    var selectedId = $('#hdnSelectedId').val();
-
-    $.ajax({
-        url: '<%: Url.Action("SaveComments")%>',
-        data: { 'id' : selectedId, 'comments' : comments },
-        type: "post",
-        cache: false,
-        success: function (savingStatus) {
-            $("#hdnOrigComments").val($('#txtComments').val());
-            $('#lblCommentsNotification').text(savingStatus);
-        },
-        error: function (xhr, ajaxOptions, thrownError) {
-            $('#lblCommentsNotification').text("Error encountered while saving the comments.");
-        }
-    });
-});
-    </script>
     </head>
 
     <body>
@@ -40,7 +19,7 @@
             {% if tapas %}
             <ul class="list-group">
                 {% for tapa in tapas %}
-                <li class="list-group-item">{{ tapa.nombre }} <button id="megusta" class="btn btn-default btn-xs">Tamaño Letra Normal</button>{{ tapa.votos }} </li>
+                <li class="list-group-item">{{ tapa.nombre }} </li>
                 {% endfor %}
             </ul>
             {% else %}
