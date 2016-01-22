@@ -13,4 +13,4 @@ deploy:
   app: aplicacion-bares
   
 after_deploy:
-- heroku run python manage.py syncdb
+- run python manage.py syncdb
