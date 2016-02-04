@@ -1,4 +1,12 @@
-###Despliegue heroku
+##Despliegue en un PaaS
+
+El PaaS elegido es [Heroku](https://id.heroku.com/), ha sido elegido por su facilidad de uso y funcionalidad.
+
+El enlace de mi aplicación en heroku es el [siguiente](http://aplicacion-bares.herokuapp.com/bares/)
+
+También se ha creado un [script](scripts/despliegue-heroku.sh) que permite descargar la aplicación desde el repositorio y desplegarla en heroku simplemente ejecutándolo
+
+##Despliegue heroku
 
 Para configurar el despliegue hay que modificar la aplicación añadiendo una serie de ficheros:
 
@@ -31,7 +39,7 @@ Una vez que lo tengamos definido, hay que indicarle a heroku que espere a que sn
 
 ![heroku](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/heroku_zpswmdusblb.png)
 
-####Configuración postgresql
+###Configuración postgresql
 
 Para utilizar la base de datos `postgresql` que nos proporciona heroku tenemos que realizar lo siguiente:
 
@@ -54,5 +62,3 @@ Cabe mencionar que `DATABASE_URL` es la URL de nuestra base de datos `postgresql
 ![db-heroku](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica%204/bd-heroku_zpsepolfln4.png)
 
 Una vez hecha la configuración, tenemos que sincronizar `sqlite` con `postgresql`, para ello basta ejecutar `heroku run python manage.py syncdb`
-
-

@@ -1,4 +1,10 @@
-####Travis
+##Integración continua
+
+Para un correcto desarrollo de la aplicación tenemos que usar sistemas de integración continua. Estos se encargan de ejecutar una serie de tests establecidos previamente para comprobar que la aplicación responde de forma correcta, esta comprobación se realiza cada vez que el repositorio sufra algún cambio.
+
+He elegido dos sistemas de integración continua, [travis](https://travis-ci.org/) y [snap-ci](https://snap-ci.com/)
+
+###Travis
 
 Lo primero que debemos hacer es crear un fichero `.travis.yml` que lo situaremos en el directorio raíz de la aplicación. En el se le indica a travis que debe hacer cuando se realice algún cambio en la aplicación.
 
@@ -29,7 +35,7 @@ Si todo va bien debería salir una salida similar a esta:
 ![practica2](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/practica2_zps7yrt4cjk.png)
 
 
-####Snap CI
+###Snap-CI
 
 Para usar Snap CI hay que registrarse primero, cosa que se puede hacer con la cuenta de github.
 
@@ -54,5 +60,3 @@ Debemos configurar un nuevo pipeline para que snap compruebe que el despliegue e
 Tras esto, cada vez que hagamos un push a nuestro repositorio, Snap comprobará todo lo comentado arriba automáticamente
 
 ![practica4](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/practica5_zpsgkktabyi.png)
-
-

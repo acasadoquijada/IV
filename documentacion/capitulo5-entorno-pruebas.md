@@ -1,3 +1,11 @@
+##Entorno de pruebas
+
+Como entorno de pruebas he elegido [docker](https://www.docker.com/) debido a que nos permite el despliegue de aplicaciones en contenedores aislados de la máquina anfitriona.
+
+El enlace a mi imagen es [este](https://hub.docker.com/r/acasadoquijada/bares/)
+
+También se ha creado un [script](scripts/docker.sh) que descarga la imagen de la aplicación y la lanza, no olvidar hacer `cd IV && make run` para lanzar la aplicación
+
 ###Docker
 
 Lo primero que debemos hacer es crearnos un fichero Dockerfile, este fichero debe en la raíz de la aplicación. En mi caso este es el fichero [Dockerfile](../Dockerfile) que he creado
@@ -23,7 +31,3 @@ Otra opción es ejecutar este [script](../scripts/docker.sh) seguido de `cd IV &
 Independientemente de la opción elegida, basta con lanzar la app, obtener su dirección ip y copiarla en el navegador seguida de `:8000`
 
 ![practica4-2](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica%204/practica4-2_zpsa8yh0krj.png)
-
-
-
-
