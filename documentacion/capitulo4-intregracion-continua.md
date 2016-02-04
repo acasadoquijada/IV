@@ -36,6 +36,29 @@ Si todo va bien debería salir una salida similar a esta:
 
 ![practica2](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/practica2_zps7yrt4cjk.png)
 
+Además de los tests, travis puede realizar el despliegue automático de nuetra app en Heroku, para ello debemos modificar nuestro fichero `.travis.yml` añadiendo lo siguiente:
+
+~~~
+deploy:
+  provider: heroku
+  api_key:
+    secure: Hdd30jsUrQyFk1rgXQUHZ98DTvL5B95lfJBJKUETstklfKTf7Ae5HOqnAa44M8ILWMp+UDQqKvl/Kli+GrJSQC9HkH4UGzerWliJEjEaulaTK8zomhRe/FH7RdHF3ooiksRsht8DUumKVXva4bM6/kZ9cPTZ/dsHLSqfw6lbKyKw9uJLw19gQ9Qa7qp+LxSPTxvXKPcrkDjL8TDaxntI7RzenPyAO4eSJKQL8u1pixQUCCQDAwAvdT+Guc1eZK82tP0L6PnuFlt8ebILO0pa4lxj47/HTsvrfbJNIlvdHdiASXWLrclEeONVnVNMEpZGqccKFT2EZNzZaaexmcrYgqoc8OCmgM922W9nYxO9Y9mo9TQ6zUtObvAjy4vmyyynKPuZdzQQKdU649S4BMffqScb/g7BVjlhR6R88oXX589a8HrXpNSlvTltnKEbym+fNk2OBr6b4PsSSJ1AMa0WnO+fTCOGSbukXj23RWECvSZC58GNbxAaNmtWJhZVXjxxw5qQWSuBpffLoURpXjqpxaTIsI+rKWkrDseW6ZZZ7SfOWoYRosI8W17aGMmx3qHZt1pvFAuNtCfnLSsoNNg1wjx4s/1DVBxK7+uBfK6/tRaUYiakSBLXClKrPG+4wmrbo1kGPtNYhN2NKs4eH1j1uV5X8Law+KGxFGKNFKZRFvc=
+  app: aplicacion-bares
+~~~
+
+Con `deploy` le indicamos que queremos el despliegue, con `provider` donde se va a realizar el despliegue.
+
+`api_key` es el resultado de ejecutar `travis encrypt $(heroku auth:token) --add deploy.api_key`, para esto último necesitamos tener instalados los clientes de lienas de comandos de heroku y travis.
+
+Usamos `app` para indicar que la aplicación se va a desplegar en una app de heroku con un nombre distinto al del repositorio.
+
+Una vez configurado todo, cada vez que realicemos un push a nuestro repositorio aparecerá lo siguiente:
+
+![travis](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica%202/travis_zpscs75iwyd.png)
+
+Nota: También se explica el proceso de integración continua con snap-ci pero solo se ha realizado con travis para esta aplicación
+
+
 
 ###Snap-CI
 
@@ -50,8 +73,8 @@ Una vez dentro debemos seleccionar el repositorio de la aplicacion deseada pulsa
 Para que Snap realice los test hay que indicárselo en un stage, para ello escribimos los comandos necesarios
 
 ~~~
-pip install -r requirements.txt
-python3 manage.py test
+make install
+make test
 ~~~
 
 ![testsnap](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/testsnap_zpsnkrfsbtb.png)
