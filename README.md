@@ -14,21 +14,23 @@
 
 3. [Test](documentacion/capitulo3-test.md)
 
-4. [Integración continua](documentacion/capitulo4-intregracion-continua.md)
+4. [Puesta en producción](documentacion/capitulo4-puesta-produccion.md)
+
+5. [Integración continua](documentacion/capitulo5-intregracion-continua.md)
     
-    4.1 [travis](documentacion/capitulo4-intregracion-continua.md#travis)
+    5.1 [travis](documentacion/capitulo5-intregracion-continua.md#travis)
 
-    4.2 [snap-ci](documentacion/capitulo4-intregracion-continua.md#snap-ci)
+    5.2 [snap-ci](documentacion/capitulo5-intregracion-continua.md#snap-ci)
     
-5. [Entorno de pruebas](documentacion/capitulo5-entorno-pruebas.md)
+6. [Entorno de pruebas](documentacion/capitulo6-entorno-pruebas.md)
 
-    5.1 [Docker](documentacion/capitulo5-entorno-pruebas.md#docker)
+    6.1 [Docker](documentacion/capitulo6-entorno-pruebas.md#docker)
 
-6. [Despliegue PaaS](documentacion/capitulo6-despliegue-PaaS.md)
+7. [Despliegue PaaS](documentacion/capitulo7-despliegue-PaaS.md)
 
-    6.1 [Heroku](documentacion/capitulo6-despliegue-PaaS.md#despliegue-heroku)
+    7.1 [Heroku](documentacion/capitulo7-despliegue-PaaS.md#despliegue-heroku)
     
-    6.2 [Configuración postgresql](documentacion/capitulo6-despliegue-PaaS.md#configuración-postgresql)
+    7.2 [Configuración postgresql](documentacion/capitulo7-despliegue-PaaS.md#configuración-postgresql)
 
 
 
