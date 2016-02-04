@@ -6,6 +6,8 @@ He elegido dos sistemas de integración continua, [travis](https://travis-ci.org
 
 ###Travis
 
+[![Build Status](https://travis-ci.org/acasadoquijada/IV.svg?branch=master)](https://travis-ci.org/acasadoquijada/IV)
+
 Lo primero que debemos hacer es crear un fichero `.travis.yml` que lo situaremos en el directorio raíz de la aplicación. En el se le indica a travis que debe hacer cuando se realice algún cambio en la aplicación.
 
 Primero le indicamos el lenguaje a usar y su versión
@@ -36,6 +38,8 @@ Si todo va bien debería salir una salida similar a esta:
 
 
 ###Snap-CI
+
+[![Build Status](https://snap-ci.com/acasadoquijada/IV/branch/master/build_image)](https://snap-ci.com/acasadoquijada/IV/branch/master)
 
 Para usar Snap CI hay que registrarse primero, cosa que se puede hacer con la cuenta de github.
 

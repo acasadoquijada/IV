@@ -5,3 +5,5 @@ Como herramienta de construcción he creado un fichero Makefile, este fichero fa
 Consta de cuatro comandos, `install`, `test` `run` y `clean`
 
 Para usar el fichero basta con ejecutar `make` seguido de cualquiera de las opciones anteriores
+
+Mi fichero makefile es [este](../Makefile)
