@@ -7,3 +7,5 @@ En mi caso django proporciona un fichero denominado `test.py` que está pensado 
 Mi fichero test se puede consultar [aquí](bares/tests.py)
 
 Este fichero ira cambiando según se añadan nuevas funcionalidades a la aplicación
+
+[capítulo anterior](capitulo2-herramienta_construccion.md) [capítulo siguiente](capitulo4-puesta-produccion.md)

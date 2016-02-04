@@ -7,3 +7,5 @@ Consta de cuatro comandos, `install`, `test` `run` y `clean`
 Para usar el fichero basta con ejecutar `make` seguido de cualquiera de las opciones anteriores
 
 Mi fichero makefile es [este](../Makefile)
+
+[capítulo anterior](capitulo1-introduccion.md) [capítulo siguiente](capitulo3-test.md)

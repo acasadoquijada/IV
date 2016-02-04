@@ -12,4 +12,4 @@ Como curiosidad la aplicación cuenta con 3 botones para aumentar, disminuir y r
 Nota: En los distintos procesos de configuración realizados durante este proyecto aparecen imágenes de dicha configuración de otra aplicación, PPE, esto se debe a que en un principio se comenzó a trabajar sobre ella pero se desecho por la aplicación actual, bares. Cabe destacar que las configuraciones de ambas aplicaciones son idénticas, por eso no se han vuelto a realizar las capturas de pantalla
 
 
-<button class="button-save large">Big Fat Button</button>  [capítulo siguiente](capitulo2-herramienta_construccion.md)
+[capítulo siguiente](capitulo2-herramienta_construccion.md)

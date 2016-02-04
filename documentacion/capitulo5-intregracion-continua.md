@@ -87,3 +87,8 @@ Debemos configurar un nuevo pipeline para que snap compruebe que el despliegue e
 Tras esto, cada vez que hagamos un push a nuestro repositorio, Snap comprobará todo lo comentado arriba automáticamente
 
 ![practica4](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/practica5_zpsgkktabyi.png)
+
+
+[capítulo anterior](capitulo4-puesta-produccion.md) [capítulo siguiente](capitulo6-entorno-pruebas.md)
+
+

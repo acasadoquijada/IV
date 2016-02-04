@@ -31,3 +31,7 @@ Otra opción es ejecutar este [script](../scripts/docker.sh) seguido de `cd IV &
 Independientemente de la opción elegida, basta con lanzar la app, obtener su dirección ip y copiarla en el navegador seguida de `:8000`
 
 ![practica4-2](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica%204/practica4-2_zpsa8yh0krj.png)
+
+[capítulo anterior](capitulo5-integracion-continua.md) [capítulo siguiente](capitulo6-despliegue-PaaS.md)
+
+
