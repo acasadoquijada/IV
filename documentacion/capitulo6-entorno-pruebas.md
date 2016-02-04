@@ -32,6 +32,6 @@ Independientemente de la opción elegida, basta con lanzar la app, obtener su di
 
 ![practica4-2](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica%204/practica4-2_zpsa8yh0krj.png)
 
-[capítulo anterior](capitulo5-integracion-continua.md) [capítulo siguiente](capitulo6-despliegue-PaaS.md)
+[capítulo anterior](capitulo5-intregracion-continua.md) [capítulo siguiente](capitulo7-despliegue-PaaS.md)
 
 

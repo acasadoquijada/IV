@@ -25,7 +25,7 @@ Una vez realizado todo lo anterior, podemos comprobar que al intentar acceder a 
 ![despliegue-dai](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica%204/desplieuge-dai_zps4fprszx5.png)
 
 
-[capítulo anterior](capitulo3-test.md) [capítulo siguiente](capitulo5-integracion-continua.md)
+[capítulo anterior](capitulo3-test.md) [capítulo siguiente](capitulo5-intregracion-continua.md)
 
 
 
