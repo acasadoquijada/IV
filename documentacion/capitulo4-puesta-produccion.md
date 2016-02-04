@@ -18,7 +18,7 @@ El propio heroku se encarga de copiar los [archivos estaticos](https://devcenter
 
 También es necesario usar [whitenoise](https://devcenter.heroku.com/articles/django-assets#whitenoise) para los archivos estáticos, por lo que he decidio usarlo, se puede ver que uso whitenoise visitando mi fichero [requirements.txt](../requirements.txt)
 
-Tras configurar correctamente la integración continua desplegaremos la aplicación a Heroku, para ver como se ha realizado el despliegue podemos consultar este [enlace](despliegue-heroku.md#despliegue-heroku)
+Tras configurar correctamente la integración continua desplegaremos la aplicación a Heroku, para ver como se ha realizado el despliegue podemos consultar este [enlace](capitulo7-despliegue-PaaS.md#despliegue-heroku)
 
 Una vez realizado todo lo anterior, podemos comprobar que al intentar acceder a una url que no se encuentra en el servidor no aparece un mensaje de debug
 
