@@ -6,7 +6,7 @@
 [![Build Status](https://travis-ci.org/acasadoquijada/IV.svg?branch=master)](https://travis-ci.org/acasadoquijada/IV)
 [![Build Status](https://snap-ci.com/acasadoquijada/IV/branch/master/build_image)](https://snap-ci.com/acasadoquijada/IV/branch/master)
 [![Heroku](https://www.herokucdn.com/deploy/button.png)](http://aplicacion-bares.herokuapp.com/bares/)
-
+[![Docker](https://camo.githubusercontent.com/8a4737bc02fcfeb36a2d7cfb9d3e886e9baf37ad/687474703a2f2f693632382e70686f746f6275636b65742e636f6d2f616c62756d732f7575362f726f6d696c67696c646f2f646f636b657269636f6e5f7a7073776a3369667772772e706e67)](https://hub.docker.com/r/acasadoquijada/bares/)
 
 1. [Introduccion](documentacion/capitulo1-introduccion.md)
 
@@ -33,11 +33,11 @@
     7.2 [Configuración postgresql](documentacion/capitulo7-despliegue-PaaS.md#configuración-postgresql)
 
 
-8. [Despliegue IaaS](documentacion/capitulo8-despliegue-IaaS)
+8. [Despliegue IaaS](documentacion/capitulo8-despliegue-IaaS.md)
 
-    8.1[Ansible](documentacion/capitulo8-despliegue-IaaS#ansible)
+    8.1[Ansible] (documentacion/https://github.com/acasadoquijada/IV/blob/master/documentacion/capitulo8-despliegue-IaaS.md#ansible)
 
-    8.2[Vagrant](documentacion/capitulo8-despliegue-IaaS#vagrant)
+    8.2[Vagrant] (documentacion/capitulo8-despliegue-IaaS.md#vagrant)
 
 
 
