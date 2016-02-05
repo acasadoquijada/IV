@@ -35,9 +35,9 @@
 
 8. [Despliegue IaaS](documentacion/capitulo8-despliegue-IaaS.md)
 
-    8.1[Ansible] (documentacion/https://github.com/acasadoquijada/IV/blob/master/documentacion/capitulo8-despliegue-IaaS.md#ansible)
+    8.1 [Ansible](documentacion/https://github.com/acasadoquijada/IV/blob/master/documentacion/capitulo8-despliegue-IaaS.md#ansible)
 
-    8.2[Vagrant] (documentacion/capitulo8-despliegue-IaaS.md#vagrant)
+    8.2 [Vagrant](documentacion/capitulo8-despliegue-IaaS.md#vagrant)
 
 
 
