@@ -33,4 +33,12 @@
     7.2 [Configuración postgresql](documentacion/capitulo7-despliegue-PaaS.md#configuración-postgresql)
 
 
+8. [Despliegue IaaS](documentacion/capitulo8-despliegue-IaaS)
+
+    8.1[Ansible](documentacion/capitulo8-despliegue-IaaS#ansible)
+
+    8.2[Vagrant](documentacion/capitulo8-despliegue-IaaS#vagrant)
+
+
+
 
