@@ -4,9 +4,7 @@ En mi caso el IaaS elegido ha sido azure. Para realizar el despliegue vamos a us
 
 ###Ansible
 
-Se trata de un sistema de gestión remota de configuración.
-
-Lo primero que debemos hacer es crear un fichero `.yml` en mi caso `aprovisionamiento.yml` cuyo contenido es:
+Lo primero que debemos hacer es crear un fichero `.yml`, el mio se llama `aprovisionamiento.yml` cuyo contenido es:
 
 ~~~
 - hosts: localhost
@@ -48,16 +46,11 @@ Ahora debemos crear un fichero llamado `ansible_hosts` con lo siguiente
 
 La ip es la ip privada de la máquina de azure que se creará con Vagrant
 
-Tras crear el fichero ejecutamos
-
-`export ANSIBLE_HOSTS=ansible_hosts`
-
-
 ###Vagrant
 
 Una vez realizados los preparativos de ansible, procedemos con Vagrant para crear la máquina en Azure.
 
-Como no he usado Azure antes tengo que instala el software necesario
+Como no he usado Azure antes tengo que instalar el software necesario
 
 * sudo apt-get install nodejs-legacy
 * sudo apt-get install npm
@@ -78,7 +71,7 @@ Para importarlas a Azure usamos
 
 `azure account import Free\ Trial-2-5-2016-credentials.publishsettings`
 
-![credenciales]()
+![credenciales](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica%205/credenciales_zpsfgkdjyqk.png)
 
 Lo siguiente que debemos hacer es subir nuestros certificados a Azure, primero hay que generarlos:
 
@@ -88,7 +81,7 @@ Lo siguiente que debemos hacer es subir nuestros certificados a Azure, primero h
 
 Una vez generados, los subimos, para ello accedemos a esta [direccion](https://manage.windowsazure.com)
 
-![certificado]()
+![certificado](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/certificado_zps7s1pnop9.png)
 
 Para terminar la configuración de Vagrant con Azure hay que generar un `.pem`
 
@@ -156,15 +149,15 @@ Finalmente ya podemos levantar nuestra máquina con
 
 * `vagrant up --provider=azure`
 
-![vagrant-up]()
+![vagrant-up](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/vagrant-up_zpsatf5knak.png)
 
 
 Para provisionarla hay que usar
 
 * `vagrant provision`
 
-
-![vagrant-provision]()
+![vagrant-provision](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/vagrant-provider_zpsi3dvxw1c.png
+)
 
 
 
