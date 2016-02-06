@@ -2,6 +2,9 @@
 
 En mi caso el IaaS elegido ha sido azure. Para realizar el despliegue vamos a usar Ansible y Vagrant. 
 
+[![Azure](http://azuredeploy.net/deploybutton.png)](http://appbares.cloudapp.net/bares/)
+
+Nota: La máquina puede estar parada para ahorrar crédito
 ###Ansible
 
 Lo primero que debemos hacer es crear un fichero `.yml`, el mio se llama `aprovisionamiento.yml` cuyo contenido es:

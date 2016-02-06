@@ -2,11 +2,12 @@
 
 ##Aplicación web sobre bares
 
-[![GNU](https://img.shields.io/badge/license-GNU%20GPL%20V3-ff69b4.svg)](LICENSE)
 [![Build Status](https://travis-ci.org/acasadoquijada/IV.svg?branch=master)](https://travis-ci.org/acasadoquijada/IV)
 [![Build Status](https://snap-ci.com/acasadoquijada/IV/branch/master/build_image)](https://snap-ci.com/acasadoquijada/IV/branch/master)
 [![Heroku](https://www.herokucdn.com/deploy/button.png)](http://aplicacion-bares.herokuapp.com/bares/)
 [![Docker](https://camo.githubusercontent.com/8a4737bc02fcfeb36a2d7cfb9d3e886e9baf37ad/687474703a2f2f693632382e70686f746f6275636b65742e636f6d2f616c62756d732f7575362f726f6d696c67696c646f2f646f636b657269636f6e5f7a7073776a3369667772772e706e67)](https://hub.docker.com/r/acasadoquijada/bares/)
+[![Azure](http://azuredeploy.net/deploybutton.png)](http://appbares.cloudapp.net/bares/)
+
 
 1. [Introduccion](documentacion/capitulo1-introduccion.md)
 

@@ -1,0 +1,25 @@
+- hosts: localhost
+  sudo: yes
+  remote_user: vagrant
+  tasks: 
+  - name: Actualizamos 
+    apt: update_cache=yes
+  - name: Instalamos los paquetes necesarios
+    apt: name=python3-setuptools state=present
+    apt: name=python3-dev state=present 
+    apt: name=build-essential state=present
+    apt: name=python3-pip state=present
+    apt: name=git state=present
+  - name: Instalamos pip para python3
+    action: apt pkg=python3-pip  
+  - name: Instalamos postgresql
+    command: sudo easy_install3 pip
+    command: sudo apt-get install -y python-dev libpq-dev python-psycopg2
+  - name: Descargamos la aplicacion
+    git: repo=https://github.com/acasadoquijada/IV.git  dest=proyectoIV clone=yes force=yes
+  - name: Damos permisos de ejecución a la app
+    command: chmod -R +x proyectoIV
+  - name: Instalamos la app
+    shell: cd proyectoIV && make install
+  - name: Ejecutamos la app
+    shell: cd proyectoIV && make run
