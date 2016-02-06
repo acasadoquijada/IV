@@ -2,6 +2,8 @@
 
 En mi caso el IaaS elegido ha sido azure. Para realizar el despliegue vamos a usar Ansible y Vagrant. 
 
+El fichero makefile cuenta con una opción para desplegar la app, `make deploy_azure` pero el proceso de certificados/acreditaciones debe hacerse manualmente.
+
 [![Azure](http://azuredeploy.net/deploybutton.png)](http://appbares.cloudapp.net/bares/)
 
 Nota: La máquina puede estar parada para ahorrar crédito
@@ -14,18 +16,19 @@ Lo primero que debemos hacer es crear un fichero `.yml`, el mio se llama `aprovi
   sudo: yes
   remote_user: vagrant
   tasks: 
-  - name: Actualizamos 
+  - name: Actualizamos sistema
     apt: update_cache=yes
   - name: Instalamos los paquetes necesarios
     apt: name=python3-setuptools state=present
     apt: name=python3-dev state=present 
     apt: name=build-essential state=present
-    apt: name=python-psycopg2 state=present
-    apt: name=libpq-dev state=present
     apt: name=python3-pip state=present
     apt: name=git state=present
   - name: Instalamos pip para python3
-    action: apt pkg=python3-pip
+    action: apt pkg=python3-pip  
+  - name: Instalamos postgresql
+    command: sudo easy_install3 pip
+    command: sudo apt-get install -y python-dev libpq-dev python-psycopg2
   - name: Descargamos la aplicacion
     git: repo=https://github.com/acasadoquijada/IV.git  dest=proyectoIV clone=yes force=yes
   - name: Damos permisos de ejecución a la app
@@ -155,7 +158,7 @@ Finalmente ya podemos levantar nuestra máquina con
 ![vagrant-up](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/vagrant-up_zpsatf5knak.png)
 
 
-Para provisionarla hay que usar
+Si no se aprovisiona automáticamente, usar
 
 * `vagrant provision`
 
@@ -163,7 +166,7 @@ Para provisionarla hay que usar
 )
 
 
-
+[capítulo anterior](documentacion/capitulo7-despliegue-PaaS.md)
 
 
 

@@ -12,7 +12,7 @@ run:
 	python3 manage.py runserver 0.0.0.0:80
 	
 deploy_heroku:
-	@cd scripts && ./despliegue-heroku.sh
+	@cd scripts/ && ./despliegue-heroku.sh
 
 deploy_azure:
 	@cd Vagrant/ && ./azure.sh

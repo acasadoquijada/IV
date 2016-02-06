@@ -2,7 +2,7 @@
   sudo: yes
   remote_user: vagrant
   tasks: 
-  - name: Actualizamos 
+  - name: Actualizamos sistema
     apt: update_cache=yes
   - name: Instalamos los paquetes necesarios
     apt: name=python3-setuptools state=present

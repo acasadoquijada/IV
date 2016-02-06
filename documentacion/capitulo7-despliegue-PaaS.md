@@ -4,7 +4,7 @@ El PaaS elegido es [Heroku](https://id.heroku.com/), ha sido elegido por su faci
 
 El enlace de mi aplicación en heroku es el [siguiente](http://aplicacion-bares.herokuapp.com/bares/)
 
-También se ha creado un [script](scripts/despliegue-heroku.sh) que permite descargar la aplicación desde el repositorio y desplegarla en heroku simplemente ejecutándolo
+El fichero makefile cuenta con una opción para desplegar la app, `make deploy_heroku`
 
 ##Despliegue heroku
 
@@ -35,7 +35,7 @@ Con estos pasos tendremos nuestra aplicación subida a Heroku
 
 ![practica1](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica3/practica1_zpsiyahfadk.png)
 
-Llegados a este punto debemos tener algún sistema de integración continua configurado para que cada vez que actualicemos el repositorio de la aplicacion se realice el despliegue automático, para tal fin he usado [snap-ci](integracion-continua.md#snap-ci)
+Llegados a este punto debemos tener algún sistema de integración continua configurado para que cada vez que actualicemos el repositorio de la aplicacion se realice el despliegue automático, para tal fin he usado [travis](documentacion/capitulo5-intregracion-continua.md#travis)
 
 Una vez que lo tengamos definido, hay que indicarle a heroku que espere a que snap-ci le de el visto bueno para desplegar la aplicación. También le indicamos que se conecte con el repositorio de nuestra aplicación para garantizarnos que al realizar un cambio en él, se realice el despliegue
 
@@ -65,5 +65,5 @@ Cabe mencionar que `DATABASE_URL` es la URL de nuestra base de datos `postgresql
 
 Una vez hecha la configuración, tenemos que sincronizar `sqlite` con `postgresql`, para ello basta ejecutar `heroku run python manage.py syncdb`
 
-[capítulo anterior](capitulo6-entorno-pruebas.md)
+[capítulo anterior](capitulo6-entorno-pruebas.md) [capítulo siguiente](documentacion/capitulo8-despliegue-IaaS.md)
 
