@@ -174,7 +174,7 @@ Tras todo esto, tendremos nuestra app en funcionamiento
 
 
 
-[capítulo anterior](documentacion/capitulo7-despliegue-PaaS.md)
+[capítulo anterior](capitulo7-despliegue-PaaS.md)
 
 
 

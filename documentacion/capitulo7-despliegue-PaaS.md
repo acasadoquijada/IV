@@ -65,5 +65,5 @@ Cabe mencionar que `DATABASE_URL` es la URL de nuestra base de datos `postgresql
 
 Una vez hecha la configuración, tenemos que sincronizar `sqlite` con `postgresql`, para ello basta ejecutar `heroku run python manage.py syncdb`
 
-[capítulo anterior](capitulo6-entorno-pruebas.md) [capítulo siguiente](documentacion/capitulo8-despliegue-IaaS.md)
+[capítulo anterior](capitulo6-entorno-pruebas.md) [capítulo siguiente](capitulo8-despliegue-IaaS.md)
 
