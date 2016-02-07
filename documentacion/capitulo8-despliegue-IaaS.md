@@ -166,6 +166,14 @@ Si no se aprovisiona automáticamente, usar
 )
 
 
+Tras todo esto, tendremos nuestra app en funcionamiento
+
+![azure](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica%205/azure_zpsr17nilza.png)
+
+
+
+
+
 [capítulo anterior](documentacion/capitulo7-despliegue-PaaS.md)
 
 
