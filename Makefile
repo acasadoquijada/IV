@@ -9,7 +9,7 @@ test: clean
 	python3 manage.py test
 	
 run:
-	python3 manage.py runserver 0.0.0.0:80
+	nohup python3 proyectoIV/manage.py runserver 0.0.0.0:80
 	
 deploy_heroku:
 	@cd scripts/ && ./despliegue-heroku.sh
