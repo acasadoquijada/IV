@@ -12,14 +12,11 @@
     apt: name=git state=present
   - name: Instalamos pip para python3
     action: apt pkg=python3-pip  
-  - name: Instalamos postgresql
-    command: sudo easy_install3 pip
-    command: sudo apt-get install -y python-dev libpq-dev python-psycopg2
+  - name: Instalamos conector postgresql
+    command: sudo apt-get install -y  libpq-dev python-psycopg2
   - name: Descargamos la aplicacion
     git: repo=https://github.com/acasadoquijada/IV.git  dest=proyectoIV clone=yes force=yes
   - name: Damos permisos de ejecución a la app
     command: chmod -R +x proyectoIV
   - name: Instalamos la app
     shell: cd proyectoIV && make install
-  - name: Ejecutamos la app
-    shell: cd proyectoIV && make run
