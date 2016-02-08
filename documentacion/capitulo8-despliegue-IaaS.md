@@ -166,7 +166,9 @@ Si no se aprovisiona automáticamente, usar
 )
 
 
-Tras todo esto, tendremos nuestra app en funcionamiento
+Para lanzar la aplicación dispongo de un fichero [fabfile.py](../fabfile.py) con una opción para ello
+
+`fab -H vagrant@appbares.cloudapp.net ejecutarApp`
 
 ![azure](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/Practica%205/azure_zpsr17nilza.png)
 
